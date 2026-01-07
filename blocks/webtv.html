@@ -9,11 +9,19 @@
 <body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
   <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
 
+    <div class="bg-white border border-slate-200 rounded-lg p-4" data-pgc="lib.blocks">
+      <div class="flex flex-wrap gap-2 text-sm">
+        <a href="#tv-hero" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Hero spotlight</a>
+        <a href="#tv-grid" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Grid canales</a>
+        <a href="#tv-playback" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Playback</a>
+      </div>
+    </div>
+
     <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / TV hero spotlight</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Hero para apps de TV con portada, rating y botones grandes para control remoto.</p>
       <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item relative bg-gradient-to-r from-slate-900 via-slate-900 to-slate-800 text-white p-6 md:p-10 rounded-xl overflow-hidden" data-pg-name="Magik / TV hero spotlight" data-magik-block>
+        <section id="tv-hero" class="pg-lib-item relative bg-gradient-to-r from-slate-900 via-slate-900 to-slate-800 text-white p-6 md:p-10 rounded-xl overflow-hidden" data-pg-name="Magik / TV hero spotlight" data-magik-block>
           <div class="absolute inset-0 opacity-30">
             <img src="https://images.unsplash.com/photo-1529676468690-a442a6c78fcd?auto=format&fit=crop&w=1400&q=80" alt="Background" class="w-full h-full object-cover">
           </div>
@@ -47,7 +55,7 @@
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / TV grid canales</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Grid de canales/episodios con estados focus para control remoto.</p>
       <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item bg-slate-900 text-white p-6 rounded-xl" data-pg-name="Magik / TV grid canales" data-magik-block>
+        <section id="tv-grid" class="pg-lib-item bg-slate-900 text-white p-6 rounded-xl" data-pg-name="Magik / TV grid canales" data-magik-block>
           <div class="flex items-center justify-between gap-3 mb-4">
             <div>
               <p class="text-sm text-slate-400" data-pg-edit data-pg-name="Etiqueta">Continuar viendo</p>
@@ -98,7 +106,7 @@
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / TV playback info</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Controles de reproducción con avance visual y ayuda para controles remotos.</p>
       <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item bg-slate-900 text-white p-6 rounded-xl flex flex-col gap-4" data-pg-name="Magik / TV playback info" data-magik-block>
+        <section id="tv-playback" class="pg-lib-item bg-slate-900 text-white p-6 rounded-xl flex flex-col gap-4" data-pg-name="Magik / TV playback info" data-magik-block>
           <div class="flex items-center gap-4">
             <div class="w-24 h-32 rounded-lg overflow-hidden ring-1 ring-white/20">
               <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80" alt="Poster" class="w-full h-full object-cover" data-pg-image data-pg-name="Poster">

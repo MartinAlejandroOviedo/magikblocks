@@ -9,11 +9,21 @@
 <body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
   <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
 
+    <div class="bg-white border border-slate-200 rounded-lg p-4" data-pgc="lib.blocks">
+      <div class="flex flex-wrap gap-2 text-sm">
+        <a href="#dash-stats" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Stats</a>
+        <a href="#dash-layout" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Layout</a>
+        <a href="#dash-charts" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Charts</a>
+        <a href="#dash-profile" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Profile</a>
+        <a href="#dash-crud" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">CRUD</a>
+      </div>
+    </div>
+
     <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Dashboard stats</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tarjetas de métricas con gráfico simple.</p>
       <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item bg-slate-50 dark:bg-slate-900 py-10" data-pg-name="Magik / Dashboard stats" data-magik-block>
+        <section id="dash-stats" class="pg-lib-item bg-slate-50 dark:bg-slate-900 py-10" data-pg-name="Magik / Dashboard stats" data-magik-block>
           <div class="max-w-6xl mx-auto px-6 space-y-6">
             <div class="flex items-center justify-between">
               <div>
@@ -60,7 +70,7 @@
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Dashboard layout</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Layout con sidebar y área de contenido.</p>
       <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item bg-slate-100 dark:bg-slate-900 py-10" data-pg-name="Magik / Dashboard layout" data-magik-block>
+        <section id="dash-layout" class="pg-lib-item bg-slate-100 dark:bg-slate-900 py-10" data-pg-name="Magik / Dashboard layout" data-magik-block>
           <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[240px_1fr] gap-6">
             <aside class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 space-y-4">
               <div class="flex items-center gap-3">
@@ -114,7 +124,7 @@
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Dashboard charts</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tarjetas de gráfico con leyendas y KPIs.</p>
       <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item bg-white dark:bg-slate-900 p-6 space-y-4 rounded-xl border border-slate-200 dark:border-slate-800" data-pg-name="Magik / Dashboard charts" data-magik-block>
+        <section id="dash-charts" class="pg-lib-item bg-white dark:bg-slate-900 p-6 space-y-4 rounded-xl border border-slate-200 dark:border-slate-800" data-pg-name="Magik / Dashboard charts" data-magik-block>
           <div class="flex items-center justify-between">
             <div>
               <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Charts etiqueta">Rendimiento</p>
@@ -154,7 +164,7 @@
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Dashboard profile</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Perfil de usuario con KPIs y acciones.</p>
       <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item bg-slate-900 text-white rounded-xl p-6 grid gap-6 md:grid-cols-[1.1fr,0.9fr]" data-pg-name="Magik / Dashboard profile" data-magik-block>
+        <section id="dash-profile" class="pg-lib-item bg-slate-900 text-white rounded-xl p-6 grid gap-6 md:grid-cols-[1.1fr,0.9fr]" data-pg-name="Magik / Dashboard profile" data-magik-block>
           <div class="flex gap-4">
             <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=240&q=80" alt="Perfil" class="h-20 w-20 rounded-2xl object-cover ring-2 ring-white/10" data-pg-image data-pg-name="Avatar perfil">
             <div class="space-y-1">
@@ -186,7 +196,7 @@
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Dashboard CRUD</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tabla CRUD con acciones rápidas y estados.</p>
       <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 space-y-3" data-pg-name="Magik / Dashboard CRUD" data-magik-block>
+        <section id="dash-crud" class="pg-lib-item bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 space-y-3" data-pg-name="Magik / Dashboard CRUD" data-magik-block>
           <div class="flex flex-wrap gap-3 items-center">
             <input type="search" class="w-full sm:w-64 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3 py-2 text-sm" placeholder="Buscar item" data-pg-edit data-pg-name="CRUD search">
             <button class="inline-flex items-center px-3 py-2 rounded-lg bg-indigo-600 text-white text-sm font-semibold" data-pg-edit data-pg-name="CRUD add">Nuevo registro</button>

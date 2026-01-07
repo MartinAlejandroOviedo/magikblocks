@@ -9,11 +9,19 @@
 <body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
   <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
 
+    <div class="bg-white border border-slate-200 rounded-lg p-4" data-pgc="lib.blocks">
+      <div class="flex flex-wrap gap-2 text-sm">
+        <a href="#watch-activity" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Actividad</a>
+        <a href="#watch-music" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Música</a>
+        <a href="#watch-notif" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 font-semibold">Notificaciones</a>
+      </div>
+    </div>
+
     <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Watch activity</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tarjeta de actividad con anillos y métricas para interfaz de reloj.</p>
       <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
-        <section class="pg-lib-item w-[320px] bg-slate-900 text-white rounded-3xl p-4 shadow-2xl" data-pg-name="Magik / Watch activity" data-magik-block>
+        <section id="watch-activity" class="pg-lib-item w-[320px] bg-slate-900 text-white rounded-3xl p-4 shadow-2xl" data-pg-name="Magik / Watch activity" data-magik-block>
           <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
             <span data-pg-edit data-pg-name="Fecha">Hoy · 07:45</span>
             <span data-pg-edit data-pg-name="Batería">84%</span>
@@ -53,7 +61,7 @@
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Watch music</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Control de música compacto con carátula y botones grandes.</p>
       <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
-        <section class="pg-lib-item w-[320px] bg-slate-900 text-white rounded-3xl p-4 shadow-2xl space-y-4" data-pg-name="Magik / Watch music" data-magik-block>
+        <section id="watch-music" class="pg-lib-item w-[320px] bg-slate-900 text-white rounded-3xl p-4 shadow-2xl space-y-4" data-pg-name="Magik / Watch music" data-magik-block>
           <div class="flex items-center gap-3">
             <div class="w-16 h-16 rounded-2xl overflow-hidden ring-1 ring-white/10">
               <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=400&q=80" alt="Album art" class="w-full h-full object-cover" data-pg-image data-pg-name="Carátula">
@@ -86,7 +94,7 @@
       <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Watch notificación</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Notificación con acciones rápidas, pensada para superficies pequeñas.</p>
       <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
-        <section class="pg-lib-item w-[320px] bg-slate-900 text-white rounded-3xl p-4 shadow-2xl space-y-3" data-pg-name="Magik / Watch notificación" data-magik-block>
+        <section id="watch-notif" class="pg-lib-item w-[320px] bg-slate-900 text-white rounded-3xl p-4 shadow-2xl space-y-3" data-pg-name="Magik / Watch notificación" data-magik-block>
           <div class="flex items-center gap-3">
             <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-500 text-lg font-bold" data-pg-edit data-pg-name="Avatar">JD</span>
             <div class="flex-1">
