@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magik Blocks TW · Feather Icons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.14), transparent 22%), radial-gradient(circle at 80% 0%, rgba(236, 72, 153, 0.14), transparent 25%), #0b1221;
+      --panel: rgba(12, 18, 32, 0.88);
+      --panel-strong: rgba(18, 26, 46, 0.96);
+      --text: #e2e8f0;
+      --muted: #9aa7c4;
+      --accent: #a855f7;
+      --border: rgba(148, 163, 184, 0.2);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 34px 18px 48px;
+    }
+    .frame {
+      width: min(1180px, 100%);
+      display: grid;
+      gap: 18px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.28);
+    }
+    header.hero { display: grid; gap: 10px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: rgba(168, 85, 247, 0.16);
+      color: #f5f3ff;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      width: fit-content;
+    }
+    h1 { margin: 0; font-size: clamp(26px, 3vw, 34px); letter-spacing: -0.02em; }
+    .lead { margin: 0; color: var(--muted); line-height: 1.6; font-size: 16px; max-width: 720px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: 13px; color: var(--muted); }
+    .pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 10px; border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06); border: 1px solid var(--border);
+      color: var(--text); font-weight: 600; font-size: 12px;
+    }
+    .pill a { color: inherit; }
+    .controls { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); align-items: end; }
+    .field { display: grid; gap: 6px; color: var(--muted); font-size: 13px; }
+    label span { color: var(--text); font-weight: 600; }
+    input[type="search"], input[type="color"], input[type="range"] {
+      width: 100%; background: var(--panel-strong); border: 1px solid var(--border);
+      color: var(--text); border-radius: 10px; padding: 10px 12px; font-family: inherit; font-size: 14px; outline: none;
+    }
+    input[type="search"]::placeholder { color: var(--muted); }
+    input[type="color"] { padding: 0; height: 44px; }
+    .inline { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--muted); font-size: 12px; }
+    .list-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; color: var(--muted); font-size: 13px; }
+    .icon-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+    .icon-card {
+      background: var(--panel-strong); border: 1px solid var(--border); border-radius: 14px; padding: 12px 10px 10px;
+      display: grid; justify-items: center; gap: 10px; color: var(--text); text-decoration: none;
+      transition: border-color 0.15s ease, transform 0.12s ease;
+    }
+    .icon-card:hover { border-color: rgba(168, 85, 247, 0.8); transform: translateY(-2px); }
+    .icon-card svg { font-size: 32px; color: var(--text); }
+    .icon-card p { margin: 0; font-size: 12px; color: var(--muted); text-align: center; word-break: break-all; }
+    .hide { display: none !important; }
+    @media (max-width: 640px) { body { padding: 24px 14px 34px; } }
+  </style>
+</head>
+<body data-pg-library="Magik Blocks TW · Feather" data-pg-description="Colección de iconos Feather listos para arrastrar en Pinegrow" data-pgc-field="require">
+  <main class="frame">
+    <header class="panel hero">
+      <div class="eyebrow">Icon Pack</div>
+      <h1>Iconos Feather para Pinegrow</h1>
+      <p class="lead">Colección Feather (MIT) con búsqueda y ajuste de tamaño/tra- zo/color. Arrastra cualquier ícono al canvas de Pinegrow.</p>
+      <div class="meta">
+        <span class="pill">+280 iconos</span>
+        <span class="pill">Trazo editable</span>
+        <span class="pill"><a href="https://feathericons.com/" target="_blank" rel="noreferrer">feathericons.com</a></span>
+        <span class="pill">CDN: unpkg</span>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="controls">
+        <label class="field">
+          <span>Búsqueda</span>
+          <input type="search" id="search" placeholder="Buscar por nombre (p. ej. camera, home, bell)" aria-label="Buscar iconos">
+        </label>
+        <label class="field">
+          <span>Tamaño <span id="size-value">32px</span></span>
+          <input type="range" id="size" min="20" max="64" step="2" value="32" aria-label="Tamaño de vista previa">
+        </label>
+        <label class="field">
+          <span>Stroke <span id="stroke-value">2</span></span>
+          <input type="range" id="stroke" min="1" max="3" step="0.2" value="2" aria-label="Grosor de línea">
+        </label>
+        <label class="field">
+          <span>Color</span>
+          <input type="color" id="color" value="#e2e8f0" aria-label="Color de trazo">
+        </label>
+      </div>
+      <div class="inline" style="margin-top: 8px;">
+        <span>Arrastra los íconos desde la lista o cópialos como SVG.</span>
+        <span id="counter">0 de 0 visibles</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="list-head">
+        <span>Todos los íconos Feather</span>
+        <span id="counter-secondary"></span>
+      </div>
+      <ul class="icon-grid" id="icon-list"></ul>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script>
+    const listEl = document.getElementById('icon-list');
+    const searchEl = document.getElementById('search');
+    const sizeEl = document.getElementById('size');
+    const strokeEl = document.getElementById('stroke');
+    const colorEl = document.getElementById('color');
+    const counter = document.getElementById('counter');
+    const counterSecondary = document.getElementById('counter-secondary');
+    const sizeValue = document.getElementById('size-value');
+    const strokeValue = document.getElementById('stroke-value');
+
+    const iconNames = Object.keys(feather.icons || {}).sort();
+
+    const buildIconItem = (name) => {
+      const li = document.createElement('li');
+      li.className = 'pg-lib-item pg-lib-svg-wrapper icon-card';
+      li.dataset.name = name;
+      li.setAttribute('data-pg-name', `Feather / ${name}`);
+      const icon = document.createElement('i');
+      icon.dataset.feather = name;
+      const label = document.createElement('p');
+      label.textContent = name;
+      li.append(icon, label);
+      return li;
+    };
+
+    const updateCounters = () => {
+      const visible = listEl.querySelectorAll('li:not(.hide)').length;
+      counter.textContent = `${visible} de ${iconNames.length} visibles`;
+      counterSecondary.textContent = `${iconNames.length} íconos listos`;
+    };
+
+    const applyPreviewSettings = () => {
+      sizeValue.textContent = `${sizeEl.value}px`;
+      strokeValue.textContent = strokeEl.value;
+      const color = colorEl.value;
+      listEl.querySelectorAll('svg.feather').forEach((svg) => {
+        svg.setAttribute('width', sizeEl.value);
+        svg.setAttribute('height', sizeEl.value);
+        svg.setAttribute('stroke-width', strokeEl.value);
+        svg.style.color = color;
+      });
+    };
+
+    const filterIcons = () => {
+      const query = searchEl.value.trim().toLowerCase();
+      listEl.querySelectorAll('[data-name]').forEach((item) => {
+        const name = item.getAttribute('data-name');
+        const match = !query || name.includes(query);
+        item.classList.toggle('hide', !match);
+      });
+      updateCounters();
+    };
+
+    const render = () => {
+      const frag = document.createDocumentFragment();
+      iconNames.forEach((name) => frag.appendChild(buildIconItem(name)));
+      listEl.appendChild(frag);
+      feather.replace({ width: sizeEl.value, height: sizeEl.value, 'stroke-width': strokeEl.value, color: colorEl.value });
+      applyPreviewSettings();
+      updateCounters();
+    };
+
+    render();
+    searchEl.addEventListener('input', filterIcons);
+    [sizeEl, strokeEl, colorEl].forEach((input) => input.addEventListener('input', () => {
+      feather.replace({ width: sizeEl.value, height: sizeEl.value, 'stroke-width': strokeEl.value, color: colorEl.value });
+      applyPreviewSettings();
+      updateCounters();
+    }));
+  </script>
+</body>
+</html>
