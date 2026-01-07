@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" data-pgc-master="master.html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magik Blocks TW - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Dashboard stats</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tarjetas de métricas con gráfico simple.</p>
+      <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-50 dark:bg-slate-900 py-10" data-pg-name="Magik / Dashboard stats" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 space-y-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Etiqueta dashboard">Panel</p>
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Título dashboard">Métricas generales</h2>
+              </div>
+              <button class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-semibold text-slate-800 dark:text-slate-100" data-pg-edit data-pg-name="Botón dashboard">Exportar</button>
+            </div>
+            <div class="grid gap-4 md:grid-cols-4">
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Card 1 label">Ingresos</p>
+                <p class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card 1 value">$82k</p>
+                <p class="text-xs text-emerald-600 font-semibold">+12%</p>
+              </div>
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Card 2 label">Usuarios</p>
+                <p class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card 2 value">4.2k</p>
+                <p class="text-xs text-emerald-600 font-semibold">+5%</p>
+              </div>
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Card 3 label">Conversion</p>
+                <p class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card 3 value">3.8%</p>
+                <p class="text-xs text-emerald-600 font-semibold">+0.6%</p>
+              </div>
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Card 4 label">Tickets</p>
+                <p class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card 4 value">126</p>
+                <p class="text-xs text-red-500 font-semibold">-4%</p>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Gráfico título">Actividad semanal</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-indigo-50 text-indigo-700">Live</span>
+              </div>
+              <div class="w-full h-36 bg-gradient-to-r from-indigo-100 via-indigo-50 to-white dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 rounded-lg"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Dashboard layout</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Layout con sidebar y área de contenido.</p>
+      <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-100 dark:bg-slate-900 py-10" data-pg-name="Magik / Dashboard layout" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[240px_1fr] gap-6">
+            <aside class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 space-y-4">
+              <div class="flex items-center gap-3">
+                <span class="w-9 h-9 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold">M</span>
+                <div>
+                  <p class="font-semibold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Sidebar title">Magik Admin</p>
+                  <p class="text-slate-500 dark:text-slate-400 text-xs" data-pg-edit data-pg-name="Sidebar sub">Control</p>
+                </div>
+              </div>
+              <nav class="space-y-2 text-sm">
+                <a href="#" class="block px-3 py-2 rounded-lg bg-indigo-50 text-indigo-700 font-semibold" data-pg-edit data-pg-name="Nav 1">Panel</a>
+                <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-pg-edit data-pg-name="Nav 2">Usuarios</a>
+                <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-pg-edit data-pg-name="Nav 3">Ventas</a>
+                <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-pg-edit data-pg-name="Nav 4">Settings</a>
+              </nav>
+            </aside>
+            <div class="space-y-6">
+              <header class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Header label">Resumen</p>
+                  <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Header título">Actividad del mes</h2>
+                </div>
+                <div class="flex gap-3">
+                  <button class="px-4 py-2 rounded-lg bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 text-sm font-semibold text-slate-800 dark:text-slate-100" data-pg-edit data-pg-name="Header botón 1">Filtrar</button>
+                  <button class="px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold text-sm" data-pg-edit data-pg-name="Header botón 2">Nuevo reporte</button>
+                </div>
+              </header>
+              <div class="grid gap-4 md:grid-cols-2">
+                <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 space-y-3">
+                  <h3 class="font-semibold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card A title">Tickets</h3>
+                  <p class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card A value">126</p>
+                  <p class="text-sm text-emerald-600 font-semibold">-4% vs semana anterior</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 space-y-3">
+                  <h3 class="font-semibold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card B title">Nuevos clientes</h3>
+                  <p class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card B value">58</p>
+                  <p class="text-sm text-emerald-600 font-semibold">+14% vs semana anterior</p>
+                </div>
+              </div>
+              <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 h-48">
+                <p class="text-sm text-slate-500 dark:text-slate-400 mb-2" data-pg-edit data-pg-name="Chart label">Gráfico</p>
+                <div class="w-full h-32 rounded-lg bg-gradient-to-r from-indigo-100 via-indigo-50 to-white dark:from-slate-700 dark:via-slate-800 dark:to-slate-900"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

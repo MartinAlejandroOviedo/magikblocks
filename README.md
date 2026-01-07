@@ -4,7 +4,7 @@ Paquete listo para publicar en GitHub Pages y consumir como librería remota en 
 
 ## Estructura
 - `magik-blocks-tw.html`: archivo de librería (usa Tailwind ya presente en tu proyecto).
-- `blocks/`: secciones separadas (solo referencia, no es necesario importarlas por separado).
+- `blocks/`: secciones separadas (heroes, features, pricing, cta, buttons, footer, dashboard, mobile).
 - `help.html`: guía rápida de publicación y uso en Pinegrow.
 - `README.txt`: instrucciones originales.
 - `index.html`: portada con acceso a las categorías de bloques.

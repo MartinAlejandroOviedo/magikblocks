@@ -8,16 +8,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
-  <header class="bg-slate-900 text-white">
-    <div class="max-w-6xl mx-auto px-6 py-8 space-y-2">
-      <p class="text-sm uppercase tracking-wide text-indigo-200">Magik Blocks TW</p>
-      <h1 class="text-2xl font-semibold">Librería Tailwind para Pinegrow</h1>
-      <p class="text-slate-200 text-sm leading-relaxed">Estructura replicada de la librería oficial (pg-lib-item + data-pgc) para que puedas arrastrar y soltar los bloques en Pinegrow.</p>
-    </div>
-  </header>
-
   <main class="max-w-6xl mx-auto px-6 py-10 space-y-8" data-pgc-field="page.components">
 
+    <!-- Heroes -->
     <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
       <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Hero prisma</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Hero de dos columnas con badge, título, descripción y doble CTA más imagen.</p>
@@ -45,31 +38,47 @@
     </div>
 
     <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
-      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Features 3</h2>
-      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Grid de 3 features con icono, título y copy.</p>
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Hero split gradient</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Hero dividido con gradiente, bullet list y CTA.</p>
       <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item bg-white py-14" data-pg-name="Magik / Features 3" data-magik-block>
-          <div class="max-w-6xl mx-auto px-6 space-y-10">
-            <div class="text-center space-y-3">
-              <p class="text-indigo-600 font-semibold uppercase tracking-wide" data-pg-edit data-pg-name="Etiqueta">Capacidades</p>
-              <h2 class="text-3xl md:text-4xl font-bold text-slate-900" data-pg-edit data-pg-name="Título">Todo lo que necesitas</h2>
-              <p class="text-slate-500 max-w-2xl mx-auto" data-pg-edit data-pg-name="Texto">Arrastra, suelta y personaliza sin romper la consistencia visual.</p>
+        <section class="pg-lib-item bg-gradient-to-br from-indigo-700 via-indigo-600 to-purple-600 text-white py-16 md:py-20" data-pg-name="Magik / Hero split gradient" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 grid gap-10 lg:grid-cols-2 items-center">
+            <div class="space-y-4">
+              <p class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide bg-white/10 px-3 py-1 rounded-full" data-pg-edit data-pg-name="Etiqueta">Launch</p>
+              <h1 class="text-4xl md:text-5xl font-bold leading-tight" data-pg-edit data-pg-name="Título">Diseña experiencias con bloques listos para producción</h1>
+              <p class="text-indigo-100 text-lg" data-pg-edit data-pg-name="Texto">Arrastra componentes pensados para landings y dashboards en Pinegrow.</p>
+              <ul class="space-y-2 text-indigo-50 text-sm" data-pg-edit data-pg-name="Lista">
+                <li>✅ Variantes light/dark listas</li>
+                <li>✅ Compatible con tu Tailwind config</li>
+                <li>✅ Textos editables desde el panel</li>
+              </ul>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-indigo-50" data-pg-name="Botón 1" data-pg-edit>Probar ahora</a>
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-white/50 text-white font-semibold hover:border-white" data-pg-name="Botón 2" data-pg-edit>Ver planes</a>
+              </div>
             </div>
-            <div class="grid gap-8 md:grid-cols-3">
-              <div class="p-6 rounded-xl border border-slate-200 shadow-sm bg-white">
-                <div class="w-12 h-12 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl font-bold mb-4" data-pg-edit data-pg-name="Ícono">⚡</div>
-                <h3 class="text-xl font-semibold text-slate-900 mb-2" data-pg-edit data-pg-name="Título item 1">Rápido</h3>
-                <p class="text-slate-500" data-pg-edit data-pg-name="Texto item 1">Bloques listos para usar con Tailwind. Sin configuración extra.</p>
-              </div>
-              <div class="p-6 rounded-xl border border-slate-200 shadow-sm bg-white">
-                <div class="w-12 h-12 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl font-bold mb-4" data-pg-edit data-pg-name="Ícono 2">🎯</div>
-                <h3 class="text-xl font-semibold text-slate-900 mb-2" data-pg-edit data-pg-name="Título item 2">Consistente</h3>
-                <p class="text-slate-500" data-pg-edit data-pg-name="Texto item 2">Tipografía, espacios y colores pensados como sistema.</p>
-              </div>
-              <div class="p-6 rounded-xl border border-slate-200 shadow-sm bg-white">
-                <div class="w-12 h-12 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl font-bold mb-4" data-pg-edit data-pg-name="Ícono 3">🛠️</div>
-                <h3 class="text-xl font-semibold text-slate-900 mb-2" data-pg-edit data-pg-name="Título item 3">Editable</h3>
-                <p class="text-slate-500" data-pg-edit data-pg-name="Texto item 3">Textos e imágenes con data-pg para editar en el panel.</p>
+            <div class="bg-white/10 border border-white/20 rounded-2xl p-6 backdrop-blur">
+              <div class="grid gap-4">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-sm text-indigo-100">Velocidad</p>
+                    <p class="text-2xl font-bold">+62%</p>
+                  </div>
+                  <span class="px-3 py-1 rounded-full bg-white/10 text-xs font-semibold">Sprint</span>
+                </div>
+                <div class="h-2 rounded-full bg-white/20">
+                  <div class="h-full w-3/4 rounded-full bg-white/70"></div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 text-sm text-indigo-50">
+                  <div class="p-3 rounded-lg bg-white/5">
+                    <p class="font-semibold">Bloques</p>
+                    <p>+80 listos</p>
+                  </div>
+                  <div class="p-3 rounded-lg bg-white/5">
+                    <p class="font-semibold">Equipos</p>
+                    <p>Colabora en tiempo real</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -78,45 +87,139 @@
     </div>
 
     <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Hero video overlay</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Hero oscuro con video/imagen y CTA secundaria.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-950 text-white py-16" data-pg-name="Magik / Hero video overlay" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 grid gap-10 lg:grid-cols-2 items-center">
+            <div class="space-y-5">
+              <p class="text-sm font-semibold uppercase tracking-wide text-indigo-300" data-pg-edit data-pg-name="Etiqueta">Release</p>
+              <h1 class="text-4xl font-bold" data-pg-edit data-pg-name="Título">Bloques premium para lanzamientos rápidos</h1>
+              <p class="text-slate-200" data-pg-edit data-pg-name="Texto">CTA dual, listas y soporte para video o imagen de fondo para mostrar producto.</p>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-semibold" data-pg-name="Botón 1" data-pg-edit>Descargar</a>
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-white/30 hover:border-white/60 text-white font-semibold" data-pg-name="Botón 2" data-pg-edit>Ver video</a>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="aspect-video rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl shadow-indigo-500/20">
+                <img src="https://images.unsplash.com/photo-1527443224154-dc2f686c9f88?auto=format&fit=crop&w=1200&q=80" alt="Video cover" class="w-full h-full object-cover" data-pg-image data-pg-name="Media">
+              </div>
+              <button class="absolute inset-0 m-auto w-14 h-14 rounded-full bg-white/90 text-indigo-700 font-bold flex items-center justify-center shadow-lg" data-pg-edit data-pg-name="Botón play">▶</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Features 3</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Grid de 3 features con icono, título y copy.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-white dark:bg-slate-900 py-14" data-pg-name="Magik / Features 3" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 space-y-10">
+            <div class="text-center space-y-3">
+              <p class="text-indigo-600 font-semibold uppercase tracking-wide" data-pg-edit data-pg-name="Etiqueta">Capacidades</p>
+              <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Título">Todo lo que necesitas</h2>
+              <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto" data-pg-edit data-pg-name="Texto">Arrastra, suelta y personaliza sin romper la consistencia visual.</p>
+            </div>
+            <div class="grid gap-8 md:grid-cols-3">
+              <div class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800">
+                <div class="w-12 h-12 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl font-bold mb-4" data-pg-edit data-pg-name="Ícono">⚡</div>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2" data-pg-edit data-pg-name="Título item 1">Rápido</h3>
+                <p class="text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Texto item 1">Bloques listos para usar con Tailwind. Sin configuración extra.</p>
+              </div>
+              <div class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800">
+                <div class="w-12 h-12 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl font-bold mb-4" data-pg-edit data-pg-name="Ícono 2">🎯</div>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2" data-pg-edit data-pg-name="Título item 2">Consistente</h3>
+                <p class="text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Texto item 2">Tipografía, espacios y colores pensados como sistema.</p>
+              </div>
+              <div class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800">
+                <div class="w-12 h-12 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl font-bold mb-4" data-pg-edit data-pg-name="Ícono 3">🛠️</div>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2" data-pg-edit data-pg-name="Título item 3">Editable</h3>
+                <p class="text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Texto item 3">Textos e imágenes con data-pg para editar en el panel.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Features checklist</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Sección con checklist y tarjeta lateral.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-50 dark:bg-slate-900 py-14" data-pg-name="Magik / Features checklist" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 grid gap-10 lg:grid-cols-2 items-center">
+            <div class="space-y-4">
+              <p class="text-indigo-600 font-semibold uppercase tracking-wide" data-pg-edit data-pg-name="Etiqueta">Stack</p>
+              <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Título">Checklist para equipos productivos</h2>
+              <ul class="space-y-3 text-slate-600 dark:text-slate-400 text-sm" data-pg-edit data-pg-name="Lista">
+                <li class="flex items-start gap-3"><span class="text-indigo-600">✓</span><span>Bloques con variantes responsive listas para mobile y desktop.</span></li>
+                <li class="flex items-start gap-3"><span class="text-indigo-600">✓</span><span>Tokens de color alineados a Tailwind por defecto.</span></li>
+                <li class="flex items-start gap-3"><span class="text-indigo-600">✓</span><span>Compatibles con dark mode añadiendo <code>class="dark"</code>.</span></li>
+              </ul>
+            </div>
+            <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm space-y-4">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">Tiempo ahorrado</p>
+                  <p class="text-3xl font-bold text-slate-900 dark:text-slate-100">12h/sem</p>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold">Equipo</span>
+              </div>
+              <div class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                <p data-pg-edit data-pg-name="Texto tarjeta">Configura las props desde Pinegrow y reutiliza las secciones en múltiples proyectos.</p>
+                <a href="#" class="inline-flex items-center gap-2 text-indigo-600 font-semibold" data-pg-edit data-pg-name="Link tarjeta">Ver documentación →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
       <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Pricing 3</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Pricing table con 3 planes y CTA destacados.</p>
       <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
-        <section class="pg-lib-item bg-slate-50 py-16" data-pg-name="Magik / Pricing 3" data-magik-block>
+        <section class="pg-lib-item bg-slate-50 dark:bg-slate-900 py-16" data-pg-name="Magik / Pricing 3" data-magik-block>
           <div class="max-w-6xl mx-auto px-6 space-y-10">
             <div class="text-center space-y-3">
-              <h2 class="text-3xl md:text-4xl font-bold text-slate-900" data-pg-edit data-pg-name="Título pricing">Planes Magik</h2>
-              <p class="text-slate-500" data-pg-edit data-pg-name="Texto pricing">Escala tus sitios con planes simples y claros.</p>
+              <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Título pricing">Planes Magik</h2>
+              <p class="text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Texto pricing">Escala tus sitios con planes simples y claros.</p>
             </div>
             <div class="grid gap-6 md:grid-cols-3">
-              <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+              <article class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
                 <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan 1">Starter</p>
-                <h3 class="text-3xl font-bold text-slate-900" data-pg-edit data-pg-name="Precio 1">$19</h3>
-                <ul class="text-slate-600 space-y-2 text-sm">
+                <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio 1">$19</h3>
+                <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
                   <li data-pg-edit data-pg-name="Beneficio 1.1">10 bloques reutilizables</li>
                   <li data-pg-edit data-pg-name="Beneficio 1.2">Actualizaciones básicas</li>
                   <li data-pg-edit data-pg-name="Beneficio 1.3">Soporte comunitario</li>
                 </ul>
-                <a href="#" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 font-semibold text-slate-800" data-pg-name="Botón plan 1" data-pg-edit>Elegir</a>
+                <a href="#" class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-name="Botón plan 1" data-pg-edit>Elegir</a>
               </article>
-              <article class="bg-white border-2 border-indigo-500 rounded-2xl p-6 shadow-md flex flex-col gap-4">
+              <article class="bg-white dark:bg-slate-800 border-2 border-indigo-500 rounded-2xl p-6 shadow-md flex flex-col gap-4">
                 <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan 2">Pro</p>
-                <h3 class="text-3xl font-bold text-slate-900" data-pg-edit data-pg-name="Precio 2">$39</h3>
-                <ul class="text-slate-600 space-y-2 text-sm">
+                <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio 2">$39</h3>
+                <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
                   <li data-pg-edit data-pg-name="Beneficio 2.1">30 bloques listos</li>
                   <li data-pg-edit data-pg-name="Beneficio 2.2">Variantes light/dark</li>
                   <li data-pg-edit data-pg-name="Beneficio 2.3">Soporte prioritario</li>
                 </ul>
-                <a href="#" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-semibold" data-pg-name="Botón plan 2" data-pg-edit>Elegir</a>
+                <a href="#" class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold text-base" data-pg-name="Botón plan 2" data-pg-edit>Elegir Pro</a>
               </article>
-              <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+              <article class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
                 <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan 3">Agencia</p>
-                <h3 class="text-3xl font-bold text-slate-900" data-pg-edit data-pg-name="Precio 3">$79</h3>
-                <ul class="text-slate-600 space-y-2 text-sm">
+                <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio 3">$79</h3>
+                <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
                   <li data-pg-edit data-pg-name="Beneficio 3.1">Todo lo Pro</li>
                   <li data-pg-edit data-pg-name="Beneficio 3.2">Licencia multi-cliente</li>
                   <li data-pg-edit data-pg-name="Beneficio 3.3">Soporte dedicado</li>
                 </ul>
-                <a href="#" class="mt-auto inline-flex justify-center px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 font-semibold text-slate-800" data-pg-name="Botón plan 3" data-pg-edit>Elegir</a>
+                <a href="#" class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-name="Botón plan 3" data-pg-edit>Elegir</a>
               </article>
             </div>
           </div>
@@ -124,6 +227,58 @@
       </div>
     </div>
 
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Pricing tabs</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Pricing con tabs mensual/anual y dos columnas.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-white dark:bg-slate-900 py-14" data-pg-name="Magik / Pricing tabs" data-magik-block>
+          <div class="max-w-4xl mx-auto px-6 space-y-8">
+            <div class="text-center space-y-3">
+              <p class="text-indigo-600 font-semibold uppercase tracking-wide" data-pg-edit data-pg-name="Etiqueta">Precios</p>
+              <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Título">Elige el plan ideal</h2>
+              <div class="inline-flex bg-slate-100 dark:bg-slate-800 p-1 rounded-full text-sm">
+                <button class="px-4 py-2 rounded-full bg-white dark:bg-slate-700 shadow text-slate-900 dark:text-white font-semibold" data-pg-edit data-pg-name="Tab 1">Mensual</button>
+                <button class="px-4 py-2 rounded-full text-slate-600 dark:text-slate-300" data-pg-edit data-pg-name="Tab 2">Anual -20%</button>
+              </div>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2">
+              <article class="border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm bg-white dark:bg-slate-800">
+                <div class="flex items-center justify-between mb-4">
+                  <div>
+                    <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan A">Essential</p>
+                    <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio A">$24</h3>
+                  </div>
+                  <span class="text-xs px-3 py-1 rounded-full bg-indigo-50 text-indigo-700">Popular</span>
+                </div>
+                <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
+                  <li data-pg-edit data-pg-name="Beneficio A1">15 bloques</li>
+                  <li data-pg-edit data-pg-name="Beneficio A2">Actualizaciones mensuales</li>
+                  <li data-pg-edit data-pg-name="Beneficio A3">Soporte chat</li>
+                </ul>
+                <a href="#" class="mt-4 inline-flex justify-center w-full px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-name="Botón plan A" data-pg-edit>Elegir Essential</a>
+              </article>
+              <article class="border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm bg-slate-900 text-white">
+                <div class="flex items-center justify-between mb-4">
+                  <div>
+                    <p class="text-sm font-semibold text-indigo-200" data-pg-edit data-pg-name="Etiqueta plan B">Ultimate</p>
+                    <h3 class="text-3xl font-bold" data-pg-edit data-pg-name="Precio B">$59</h3>
+                  </div>
+                  <span class="text-xs px-3 py-1 rounded-full bg-indigo-500 text-white">Pro</span>
+                </div>
+                <ul class="text-indigo-100 space-y-2 text-sm">
+                  <li data-pg-edit data-pg-name="Beneficio B1">60+ bloques y dashboards</li>
+                  <li data-pg-edit data-pg-name="Beneficio B2">Brand presets</li>
+                  <li data-pg-edit data-pg-name="Beneficio B3">Soporte prioritario</li>
+                </ul>
+                <a href="#" class="mt-4 inline-flex justify-center w-full px-4 py-2 rounded-lg bg-white text-indigo-700 font-semibold text-base hover:bg-indigo-50" data-pg-name="Botón plan B" data-pg-edit>Elegir Ultimate</a>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- CTA -->
     <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
       <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / CTA centrado</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">CTA centrado con dos botones.</p>
@@ -141,6 +296,79 @@
       </div>
     </div>
 
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / CTA split</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">CTA con tarjeta y lista de bullets.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-white dark:bg-slate-900 py-12" data-pg-name="Magik / CTA split" data-magik-block>
+          <div class="max-w-5xl mx-auto px-6 grid gap-8 md:grid-cols-2 items-center">
+            <div class="space-y-4">
+              <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Título CTA split">Desbloquea el catálogo completo</h2>
+              <p class="text-slate-600 dark:text-slate-400" data-pg-edit data-pg-name="Texto CTA split">Accede a dashboards, mobile UI y componentes listos para producción.</p>
+              <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                <li class="flex gap-2"><span class="text-indigo-600">•</span><span data-pg-edit data-pg-name="Bullet 1">Bloques con pg-lib-item para arrastrar directo.</span></li>
+                <li class="flex gap-2"><span class="text-indigo-600">•</span><span data-pg-edit data-pg-name="Bullet 2">Dark mode soportado.</span></li>
+                <li class="flex gap-2"><span class="text-indigo-600">•</span><span data-pg-edit data-pg-name="Bullet 3">Compatible con Tailwind 3.</span></li>
+              </ul>
+            </div>
+            <div class="bg-indigo-600 text-white rounded-2xl p-6 shadow-lg space-y-4">
+              <p class="text-sm uppercase tracking-wide text-indigo-200">Plan equipo</p>
+              <p class="text-3xl font-bold">$79/mes</p>
+              <p class="text-indigo-100 text-sm">Incluye acceso a todos los bloques y soporte prioritario.</p>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <a href="#" class="inline-flex justify-center px-4 py-2 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-indigo-50" data-pg-edit data-pg-name="Botón CTA split 1">Obtener acceso</a>
+                <a href="#" class="inline-flex justify-center px-4 py-2 rounded-lg border border-white/50 text-white font-semibold hover:border-white" data-pg-edit data-pg-name="Botón CTA split 2">Hablar con ventas</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Button primary</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón primario índigo, tamaño md.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
+        <a href="#" class="pg-lib-item inline-flex items-center justify-center px-5 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold" data-pg-name="Magik / Button primary" data-magik-block data-pg-edit>Botón primario</a>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Button neutral</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón oscuro neutro, tamaño md.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
+        <a href="#" class="pg-lib-item inline-flex items-center justify-center px-5 py-3 rounded-lg bg-slate-800 hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 text-white font-semibold" data-pg-name="Magik / Button neutral" data-magik-block data-pg-edit>Botón neutral</a>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Button ghost</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón ghost (usar sobre fondos oscuros).</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center bg-slate-900" data-pgc-field="Component">
+        <a href="#" class="pg-lib-item inline-flex items-center justify-center px-5 py-3 rounded-lg border border-white/60 text-white font-semibold hover:border-white" data-pg-name="Magik / Button ghost" data-magik-block data-pg-edit>Botón ghost</a>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Button outline</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón outline neutro, tamaño md.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
+        <a href="#" class="pg-lib-item inline-flex items-center justify-center px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-name="Magik / Button outline neutral" data-magik-block data-pg-edit>Botón outline</a>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Button icon</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón con icono y fondo suave.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
+        <a href="#" class="pg-lib-item inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-50 text-indigo-700 font-semibold hover:bg-indigo-100" data-pg-name="Magik / Button icon" data-magik-block data-pg-edit>
+          <span>🚀</span><span>Deploy</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
       <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Footer minimal</h2>
       <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Footer simple con branding y enlaces.</p>
@@ -162,6 +390,236 @@
             <p class="text-slate-500 text-sm" data-pg-edit data-pg-name="Copyright">© 2024 Magik. Todos los derechos reservados.</p>
           </div>
         </footer>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Footer columns</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Footer con columnas de enlaces y formulario.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <footer class="pg-lib-item bg-slate-950 text-slate-100 py-12" data-pg-name="Magik / Footer columns" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 grid gap-10 md:grid-cols-4">
+            <div class="space-y-3">
+              <div class="inline-flex items-center gap-2">
+                <span class="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-lg">M</span>
+                <div>
+                  <p class="font-semibold" data-pg-edit data-pg-name="Marca 2">Magik Blocks</p>
+                  <p class="text-slate-400 text-sm" data-pg-edit data-pg-name="Tagline">Tailwind + Pinegrow</p>
+                </div>
+              </div>
+              <p class="text-slate-400 text-sm" data-pg-edit data-pg-name="Texto footer">Construye landing, dashboards y apps móviles con bloques listos.</p>
+            </div>
+            <div class="space-y-2 text-sm">
+              <p class="font-semibold text-white">Producto</p>
+              <a href="#" class="block text-slate-400 hover:text-white" data-pg-edit data-pg-name="Link P1">Características</a>
+              <a href="#" class="block text-slate-400 hover:text-white" data-pg-edit data-pg-name="Link P2">Precios</a>
+              <a href="#" class="block text-slate-400 hover:text-white" data-pg-edit data-pg-name="Link P3">Changelog</a>
+            </div>
+            <div class="space-y-2 text-sm">
+              <p class="font-semibold text-white">Recursos</p>
+              <a href="#" class="block text-slate-400 hover:text-white" data-pg-edit data-pg-name="Link R1">Documentación</a>
+              <a href="#" class="block text-slate-400 hover:text-white" data-pg-edit data-pg-name="Link R2">Soporte</a>
+              <a href="#" class="block text-slate-400 hover:text-white" data-pg-edit data-pg-name="Link R3">Guías</a>
+            </div>
+            <div class="space-y-3">
+              <p class="font-semibold text-white">Newsletter</p>
+              <p class="text-slate-400 text-sm" data-pg-edit data-pg-name="Texto newsletter">Recibe updates de nuevos bloques.</p>
+              <form class="space-y-2">
+                <input type="email" class="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 text-sm" placeholder="tu@email.com" data-pg-edit data-pg-name="Email placeholder">
+                <button class="w-full inline-flex justify-center px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700" type="submit" data-pg-edit data-pg-name="Botón newsletter">Suscribirme</button>
+              </form>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Dashboard stats</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tarjetas de métricas con gráfico simple.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-50 dark:bg-slate-900 py-10" data-pg-name="Magik / Dashboard stats" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 space-y-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Etiqueta dashboard">Panel</p>
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Título dashboard">Métricas generales</h2>
+              </div>
+              <button class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-semibold text-slate-800 dark:text-slate-100" data-pg-edit data-pg-name="Botón dashboard">Exportar</button>
+            </div>
+            <div class="grid gap-4 md:grid-cols-4">
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Card 1 label">Ingresos</p>
+                <p class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card 1 value">$82k</p>
+                <p class="text-xs text-emerald-600 font-semibold">+12%</p>
+              </div>
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Card 2 label">Usuarios</p>
+                <p class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card 2 value">4.2k</p>
+                <p class="text-xs text-emerald-600 font-semibold">+5%</p>
+              </div>
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Card 3 label">Conversion</p>
+                <p class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card 3 value">3.8%</p>
+                <p class="text-xs text-emerald-600 font-semibold">+0.6%</p>
+              </div>
+              <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Card 4 label">Tickets</p>
+                <p class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card 4 value">126</p>
+                <p class="text-xs text-red-500 font-semibold">-4%</p>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Gráfico título">Actividad semanal</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-indigo-50 text-indigo-700">Live</span>
+              </div>
+              <div class="w-full h-36 bg-gradient-to-r from-indigo-100 via-indigo-50 to-white dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 rounded-lg"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Dashboard layout</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Layout con sidebar y área de contenido.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-100 dark:bg-slate-900 py-10" data-pg-name="Magik / Dashboard layout" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[240px_1fr] gap-6">
+            <aside class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 space-y-4">
+              <div class="flex items-center gap-3">
+                <span class="w-9 h-9 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold">M</span>
+                <div>
+                  <p class="font-semibold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Sidebar title">Magik Admin</p>
+                  <p class="text-slate-500 dark:text-slate-400 text-xs" data-pg-edit data-pg-name="Sidebar sub">Control</p>
+                </div>
+              </div>
+              <nav class="space-y-2 text-sm">
+                <a href="#" class="block px-3 py-2 rounded-lg bg-indigo-50 text-indigo-700 font-semibold" data-pg-edit data-pg-name="Nav 1">Panel</a>
+                <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-pg-edit data-pg-name="Nav 2">Usuarios</a>
+                <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-pg-edit data-pg-name="Nav 3">Ventas</a>
+                <a href="#" class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-pg-edit data-pg-name="Nav 4">Settings</a>
+              </nav>
+            </aside>
+            <div class="space-y-6">
+              <header class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <p class="text-sm text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Header label">Resumen</p>
+                  <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Header título">Actividad del mes</h2>
+                </div>
+                <div class="flex gap-3">
+                  <button class="px-4 py-2 rounded-lg bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 text-sm font-semibold text-slate-800 dark:text-slate-100" data-pg-edit data-pg-name="Header botón 1">Filtrar</button>
+                  <button class="px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold text-sm" data-pg-edit data-pg-name="Header botón 2">Nuevo reporte</button>
+                </div>
+              </header>
+              <div class="grid gap-4 md:grid-cols-2">
+                <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 space-y-3">
+                  <h3 class="font-semibold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card A title">Tickets</h3>
+                  <p class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card A value">126</p>
+                  <p class="text-sm text-emerald-600 font-semibold">-4% vs semana anterior</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 space-y-3">
+                  <h3 class="font-semibold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card B title">Nuevos clientes</h3>
+                  <p class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Card B value">58</p>
+                  <p class="text-sm text-emerald-600 font-semibold">+14% vs semana anterior</p>
+                </div>
+              </div>
+              <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 h-48">
+                <p class="text-sm text-slate-500 dark:text-slate-400 mb-2" data-pg-edit data-pg-name="Chart label">Gráfico</p>
+                <div class="w-full h-32 rounded-lg bg-gradient-to-r from-indigo-100 via-indigo-50 to-white dark:from-slate-700 dark:via-slate-800 dark:to-slate-900"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Mobile app shell</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Vista tipo app con header y cards.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-100 py-10" data-pg-name="Magik / Mobile app shell" data-magik-block>
+          <div class="mx-auto w-full max-w-sm bg-white rounded-3xl border border-slate-200 shadow-lg overflow-hidden">
+            <header class="px-5 py-4 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">M</span>
+                <div>
+                  <p class="text-sm font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile title">Magik App</p>
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Mobile subtitle">Dashboard</p>
+                </div>
+              </div>
+              <button class="w-8 h-8 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center" data-pg-edit data-pg-name="Mobile action">⋮</button>
+            </header>
+            <div class="px-5 pb-5 space-y-4">
+              <div class="p-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+                <p class="text-sm opacity-80" data-pg-edit data-pg-name="Card mobile label">Saldo</p>
+                <p class="text-3xl font-bold" data-pg-edit data-pg-name="Card mobile value">$8,420</p>
+                <p class="text-xs opacity-80">+12% este mes</p>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div class="p-3 rounded-xl border border-slate-200">
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Mobile card1 label">Pendientes</p>
+                  <p class="text-lg font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile card1 value">18</p>
+                </div>
+                <div class="p-3 rounded-xl border border-slate-200">
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Mobile card2 label">Completos</p>
+                  <p class="text-lg font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile card2 value">42</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="text-sm font-semibold text-slate-900">Actividad</p>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-slate-600" data-pg-edit data-pg-name="Mobile item 1">Suscripción Pro</span>
+                  <span class="font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile item 1 value">-$19</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-slate-600" data-pg-edit data-pg-name="Mobile item 2">Depósito</span>
+                  <span class="font-semibold text-emerald-600" data-pg-edit data-pg-name="Mobile item 2 value">+$120</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4" data-pgc="lib.blocks">
+      <h2 class="text-xl font-semibold" data-pgc-field="Block Title">Magik / Mobile bottom nav</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Layout móvil con navegación inferior.</p>
+      <div class="border border-dashed border-slate-200 rounded-lg overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-100 py-10" data-pg-name="Magik / Mobile bottom nav" data-magik-block>
+          <div class="mx-auto w-full max-w-sm bg-white rounded-3xl border border-slate-200 shadow-lg overflow-hidden flex flex-col" style="min-height: 620px;">
+            <header class="px-5 py-4 border-b border-slate-200">
+              <p class="text-sm font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile BN title">Tareas</p>
+              <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Mobile BN subtitle">Hoy</p>
+            </header>
+            <div class="flex-1 px-5 py-4 space-y-3">
+              <div class="p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                <div>
+                  <p class="text-sm font-semibold text-slate-900" data-pg-edit data-pg-name="Task 1">Revisar brief</p>
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Task 1 desc">Proyecto SaaS</p>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">30 min</span>
+              </div>
+              <div class="p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                <div>
+                  <p class="text-sm font-semibold text-slate-900" data-pg-edit data-pg-name="Task 2">UI móvil</p>
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Task 2 desc">Dashboard clientes</p>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-semibold">1 h</span>
+              </div>
+            </div>
+            <nav class="grid grid-cols-4 border-t border-slate-200">
+              <a href="#" class="flex flex-col items-center py-3 text-indigo-600 font-semibold" data-pg-edit data-pg-name="Nav home">🏠<span class="text-xs">Home</span></a>
+              <a href="#" class="flex flex-col items-center py-3 text-slate-500" data-pg-edit data-pg-name="Nav search">🔍<span class="text-xs">Buscar</span></a>
+              <a href="#" class="flex flex-col items-center py-3 text-slate-500" data-pg-edit data-pg-name="Nav tasks">✅<span class="text-xs">Tareas</span></a>
+              <a href="#" class="flex flex-col items-center py-3 text-slate-500" data-pg-edit data-pg-name="Nav profile">👤<span class="text-xs">Perfil</span></a>
+            </nav>
+          </div>
+        </section>
       </div>
     </div>
 

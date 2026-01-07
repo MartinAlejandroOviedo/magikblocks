@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es" data-pgc-master="master.html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magik Blocks TW - Mobile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Mobile app shell</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Vista tipo app con header y cards.</p>
+      <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-100 py-10" data-pg-name="Magik / Mobile app shell" data-magik-block>
+          <div class="mx-auto w-full max-w-sm bg-white rounded-3xl border border-slate-200 shadow-lg overflow-hidden">
+            <header class="px-5 py-4 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">M</span>
+                <div>
+                  <p class="text-sm font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile title">Magik App</p>
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Mobile subtitle">Dashboard</p>
+                </div>
+              </div>
+              <button class="w-8 h-8 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center" data-pg-edit data-pg-name="Mobile action">⋮</button>
+            </header>
+            <div class="px-5 pb-5 space-y-4">
+              <div class="p-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+                <p class="text-sm opacity-80" data-pg-edit data-pg-name="Card mobile label">Saldo</p>
+                <p class="text-3xl font-bold" data-pg-edit data-pg-name="Card mobile value">$8,420</p>
+                <p class="text-xs opacity-80">+12% este mes</p>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div class="p-3 rounded-xl border border-slate-200">
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Mobile card1 label">Pendientes</p>
+                  <p class="text-lg font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile card1 value">18</p>
+                </div>
+                <div class="p-3 rounded-xl border border-slate-200">
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Mobile card2 label">Completos</p>
+                  <p class="text-lg font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile card2 value">42</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="text-sm font-semibold text-slate-900">Actividad</p>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-slate-600" data-pg-edit data-pg-name="Mobile item 1">Suscripción Pro</span>
+                  <span class="font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile item 1 value">-$19</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-slate-600" data-pg-edit data-pg-name="Mobile item 2">Depósito</span>
+                  <span class="font-semibold text-emerald-600" data-pg-edit data-pg-name="Mobile item 2 value">+$120</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Mobile bottom nav</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Layout móvil con navegación inferior.</p>
+      <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-100 py-10" data-pg-name="Magik / Mobile bottom nav" data-magik-block>
+          <div class="mx-auto w-full max-w-sm bg-white rounded-3xl border border-slate-200 shadow-lg overflow-hidden flex flex-col" style="min-height: 620px;">
+            <header class="px-5 py-4 border-b border-slate-200">
+              <p class="text-sm font-semibold text-slate-900" data-pg-edit data-pg-name="Mobile BN title">Tareas</p>
+              <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Mobile BN subtitle">Hoy</p>
+            </header>
+            <div class="flex-1 px-5 py-4 space-y-3">
+              <div class="p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                <div>
+                  <p class="text-sm font-semibold text-slate-900" data-pg-edit data-pg-name="Task 1">Revisar brief</p>
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Task 1 desc">Proyecto SaaS</p>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">30 min</span>
+              </div>
+              <div class="p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                <div>
+                  <p class="text-sm font-semibold text-slate-900" data-pg-edit data-pg-name="Task 2">UI móvil</p>
+                  <p class="text-xs text-slate-500" data-pg-edit data-pg-name="Task 2 desc">Dashboard clientes</p>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-semibold">1 h</span>
+              </div>
+            </div>
+            <nav class="grid grid-cols-4 border-t border-slate-200">
+              <a href="#" class="flex flex-col items-center py-3 text-indigo-600 font-semibold" data-pg-edit data-pg-name="Nav home">🏠<span class="text-xs">Home</span></a>
+              <a href="#" class="flex flex-col items-center py-3 text-slate-500" data-pg-edit data-pg-name="Nav search">🔍<span class="text-xs">Buscar</span></a>
+              <a href="#" class="flex flex-col items-center py-3 text-slate-500" data-pg-edit data-pg-name="Nav tasks">✅<span class="text-xs">Tareas</span></a>
+              <a href="#" class="flex flex-col items-center py-3 text-slate-500" data-pg-edit data-pg-name="Nav profile">👤<span class="text-xs">Perfil</span></a>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
