@@ -5,9 +5,9 @@ Paquete listo para publicar en GitHub Pages y consumir como librería remota en 
 ## Estructura
 - `magik-blocks-tw.html`: archivo de librería (usa Tailwind ya presente en tu proyecto).
 - `blocks/`: secciones separadas (solo referencia, no es necesario importarlas por separado).
-- `preview.html`: vista previa rápida (carga Tailwind desde CDN).
+- `help.html`: guía rápida de publicación y uso en Pinegrow.
 - `README.txt`: instrucciones originales.
-- `index.html`: portada con enlaces y URLs clave.
+- `index.html`: portada con acceso a las categorías de bloques.
 
 ## Publicar en GitHub Pages
 1) Crea un repo nuevo y copia todo el contenido de `magik-blocks-tw-gh-pages/` en la raíz.  
@@ -23,4 +23,4 @@ Paquete listo para publicar en GitHub Pages y consumir como librería remota en 
 
 ## Prueba rápida sin GitHub
 - Desde esta carpeta: `python -m http.server 8080` y usa `http://localhost:8080/magik-blocks-tw.html` como URL de librería.  
-- Para ver el catálogo visual: abre `http://localhost:8080/preview.html` o, ya publicado, `https://<usuario>.github.io/<repo>/preview.html`.
+- Para ayuda detallada abre `help.html`.

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magik Blocks TW · Ayuda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: radial-gradient(circle at 20% 20%, rgba(79, 70, 229, 0.12), transparent 25%), radial-gradient(circle at 80% 0%, rgba(16, 185, 129, 0.1), transparent 26%), #0f172a;
+      --panel: rgba(15, 23, 42, 0.5);
+      --border: rgba(148, 163, 184, 0.16);
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 36px 18px 48px;
+    }
+    .frame { width: min(900px, 100%); display: grid; gap: 16px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+    }
+    h1 { margin: 0 0 6px; font-size: clamp(26px, 3vw, 32px); letter-spacing: -0.02em; }
+    h2 { margin: 0 0 8px; font-size: 18px; letter-spacing: -0.01em; }
+    p { margin: 0 0 10px; color: var(--muted); line-height: 1.6; }
+    ol { margin: 0 0 10px 18px; color: var(--muted); line-height: 1.6; }
+    li { margin-bottom: 6px; }
+    code { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, Menlo, monospace; color: #e9d5ff; }
+    .eyebrow {
+      display: inline-flex;
+      padding: 6px 12px;
+      background: rgba(168, 85, 247, 0.18);
+      color: #f5f3ff;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 8px;
+    }
+    .pill:hover { border-color: rgba(168, 85, 247, 0.6); }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <section class="card">
+      <div class="eyebrow">Ayuda rápida</div>
+      <h1>Cómo usar Magik Blocks TW</h1>
+      <p>Bloques Tailwind listos para Pinegrow. Requieren que tu proyecto ya tenga Tailwind activo (el CDN del archivo sirve solo para la vista previa de la librería).</p>
+      <div>
+        <a class="pill" href="magik-blocks-tw.html">Abrir librería</a>
+        <a class="pill" href="index.html">Volver al catálogo</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1. Publicar en GitHub Pages</h2>
+      <ol>
+        <li>Copia todo el contenido de la carpeta en un repo nuevo.</li>
+        <li>Commit, push y activa GitHub Pages con fuente <code>main</code> y carpeta <code>/</code>.</li>
+        <li>Comprueba que responde <code>https://&lt;usuario&gt;.github.io/&lt;repo&gt;/magik-blocks-tw.html</code>.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>2. Cargar la librería en Pinegrow</h2>
+      <ol>
+        <li>Asegúrate de que tu proyecto ya compila Tailwind.</li>
+        <li>En Pinegrow: <strong>Manage Libraries & Plugins</strong> → <strong>Add Library</strong> → <strong>Remote file (URL)</strong>.</li>
+        <li>Pega la URL pública de <code>magik-blocks-tw.html</code> (ej: <code>https://&lt;usuario&gt;.github.io/&lt;repo&gt;/magik-blocks-tw.html</code>).</li>
+        <li>Los bloques aparecerán en el panel y podrás arrastrarlos al canvas.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>3. Prueba local rápida (sin Pages)</h2>
+      <ol>
+        <li>Desde esta carpeta, levanta un server: <code>python -m http.server 8080</code>.</li>
+        <li>En Pinegrow usa <code>http://localhost:8080/magik-blocks-tw.html</code> como URL de librería.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Notas y tips</h2>
+      <ul style="margin:0 0 0 18px; color: var(--muted); line-height:1.6;">
+        <li>El CSS proviene de tu proyecto Tailwind; el CDN del archivo solo ayuda a ver la librería.</li>
+        <li>El bloque raíz de cada componente usa <code>pg-lib-item</code> y los campos editables llevan <code>data-pg-edit</code>.</li>
+        <li>Para activar variantes dark, agrega <code>class="dark"</code> en <code>&lt;html&gt;</code> o <code>&lt;body&gt;</code> de tu proyecto.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
