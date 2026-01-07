@@ -143,9 +143,63 @@
       font-size: 13px;
       color: var(--muted);
     }
+    .catalog-title {
+      margin: 0 0 6px;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+    .catalog-lead {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 15px;
+    }
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .catalog-card {
+      display: block;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s ease, transform 0.15s ease;
+    }
+    .catalog-card:hover {
+      border-color: rgba(168, 85, 247, 0.7);
+      transform: translateY(-2px);
+    }
+    .catalog-card h3 {
+      margin: 6px 0 4px;
+      font-size: 17px;
+      letter-spacing: -0.01em;
+    }
+    .catalog-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 8px;
+      border-radius: 10px;
+      background: rgba(168, 85, 247, 0.18);
+      color: #f8f7ff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
   </style>
 </head>
-<body>
+<body data-pgc-field="require">
   <main class="frame">
     <header class="header">
       <div class="eyebrow">Magik Blocks TW</div>
@@ -183,6 +237,43 @@
         </ol>
         <p class="meta">Nota: `magik-blocks-tw.html` no incluye Tailwind; reutiliza el Tailwind de tu proyecto.</p>
       </article>
+    </section>
+
+    <section class="card">
+      <h2 class="catalog-title">Colección por tipo de bloque</h2>
+      <p class="catalog-lead">Enlaces directos a cada categoría en la carpeta <code>blocks/</code> para navegar o probar la librería desde Pinegrow.</p>
+      <div class="catalog-grid">
+        <a class="catalog-card" href="blocks/heroes.html">
+          <span class="tag">Hero</span>
+          <h3>Heroes</h3>
+          <p>Hero de dos columnas con imagen y doble CTA.</p>
+        </a>
+        <a class="catalog-card" href="blocks/features.html">
+          <span class="tag">Features</span>
+          <h3>Features</h3>
+          <p>Grid de tres features con icono, título y copy.</p>
+        </a>
+        <a class="catalog-card" href="blocks/pricing.html">
+          <span class="tag">Pricing</span>
+          <h3>Pricing</h3>
+          <p>Tres planes con CTA destacado y variantes light/dark.</p>
+        </a>
+        <a class="catalog-card" href="blocks/cta.html">
+          <span class="tag">CTA</span>
+          <h3>Call to action</h3>
+          <p>CTA centrado con botón primario y ghost.</p>
+        </a>
+        <a class="catalog-card" href="blocks/buttons.html">
+          <span class="tag">Botones</span>
+          <h3>Buttons</h3>
+          <p>Presets primario, neutro, ghost y outline.</p>
+        </a>
+        <a class="catalog-card" href="blocks/footer.html">
+          <span class="tag">Footer</span>
+          <h3>Footer</h3>
+          <p>Pie minimal con marca, navegación y copyright.</p>
+        </a>
+      </div>
     </section>
   </main>
 </body>
