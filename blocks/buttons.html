@@ -1,20 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-pgc-master="master.html">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magik Blocks TW - Buttons</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow">
-  <!-- Preset: color=primary, size=md -->
-  <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold" data-pg-block="Magik/Button primary" data-pg-name="Magik / Button primary" data-pg-edit>Botón primario</a>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
 
-  <!-- Preset: color=neutral, size=md -->
-  <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-slate-800 hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 text-white font-semibold" data-pg-block="Magik/Button neutral" data-pg-name="Magik / Button neutral" data-pg-edit>Botón neutral</a>
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Button primary</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón primario índigo, tamaño md.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
+        <a href="#" class="pg-lib-item inline-flex items-center justify-center px-5 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold" data-pg-name="Magik / Button primary" data-magik-block data-pg-edit>Botón primario</a>
+      </div>
+    </div>
 
-  <!-- Preset: color=ghost, size=md (solo fondos oscuros) -->
-  <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-white/60 text-white font-semibold hover:border-white" data-pg-block="Magik/Button ghost" data-pg-name="Magik / Button ghost" data-pg-edit>Botón ghost</a>
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Button neutral</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón oscuro neutro, tamaño md.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
+        <a href="#" class="pg-lib-item inline-flex items-center justify-center px-5 py-3 rounded-lg bg-slate-800 hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 text-white font-semibold" data-pg-name="Magik / Button neutral" data-magik-block data-pg-edit>Botón neutral</a>
+      </div>
+    </div>
 
-  <!-- Preset: color=outline-neutral, size=md -->
-  <a href="#" class="inline-flex items-center justify-center px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-block="Magik/Button outline neutral" data-pg-name="Magik / Button outline neutral" data-pg-edit>Botón outline</a>
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Button ghost</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón ghost (usar sobre fondos oscuros).</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center bg-slate-900" data-pgc-field="Component">
+        <a href="#" class="pg-lib-item inline-flex items-center justify-center px-5 py-3 rounded-lg border border-white/60 text-white font-semibold hover:border-white" data-pg-name="Magik / Button ghost" data-magik-block data-pg-edit>Botón ghost</a>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Button outline neutral</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón outline neutro, tamaño md.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
+        <a href="#" class="pg-lib-item inline-flex items-center justify-center px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-name="Magik / Button outline neutral" data-magik-block data-pg-edit>Botón outline</a>
+      </div>
+    </div>
+
+  </main>
 </body>
 </html>

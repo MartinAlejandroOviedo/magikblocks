@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-pgc-master="master.html">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magik Blocks TW - CTA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow">
-  <section class="bg-indigo-600 text-white py-14" data-pg-block="Magik/CTA centrado" data-pg-name="Magik / CTA centrado" data-magik-block>
-    <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
-      <h2 class="text-3xl md:text-4xl font-bold" data-pg-edit data-pg-name="Título CTA">Lanza tu siguiente landing en minutos</h2>
-      <p class="text-indigo-100 text-lg" data-pg-edit data-pg-name="Texto CTA">Bloques listos para arrastrar, pensados para Tailwind y Pinegrow.</p>
-      <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <!-- Preset: color=primary, size=md -->
-        <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-semibold" data-pg-name="CTA / Button primary" data-pg-edit>Empezar ahora</a>
-        <!-- Preset: color=ghost, size=md (solo fondos oscuros) -->
-        <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-white/60 text-white font-semibold hover:border-white" data-pg-name="CTA / Button ghost" data-pg-edit>Ver demo</a>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / CTA centrado</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">CTA centrado con dos botones (primario + ghost).</p>
+      <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-indigo-600 text-white py-14" data-pg-name="Magik / CTA centrado" data-magik-block>
+          <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
+            <h2 class="text-3xl md:text-4xl font-bold" data-pg-edit data-pg-name="Título CTA">Lanza tu siguiente landing en minutos</h2>
+            <p class="text-indigo-100 text-lg" data-pg-edit data-pg-name="Texto CTA">Bloques listos para arrastrar, pensados para Tailwind y Pinegrow.</p>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-indigo-50" data-pg-name="CTA / Button primary" data-pg-edit>Empezar ahora</a>
+              <a href="#" class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-white/60 text-white font-semibold hover:border-white" data-pg-name="CTA / Button ghost" data-pg-edit>Ver demo</a>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
+
+  </main>
 </body>
 </html>

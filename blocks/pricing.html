@@ -1,52 +1,61 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-pgc-master="master.html">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magik Blocks TW - Pricing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow">
-  <section class="bg-slate-50 dark:bg-slate-900 py-16" data-pg-block="Magik/Pricing 3" data-pg-name="Magik / Pricing 3" data-magik-block>
-    <div class="max-w-6xl mx-auto px-6 space-y-10">
-      <div class="text-center space-y-3">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Título pricing">Planes Magik</h2>
-        <p class="text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Texto pricing">Escala tus sitios con planes simples y claros.</p>
-      </div>
-      <div class="grid gap-6 md:grid-cols-3">
-        <article class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm flex flex-col gap-4" data-pg-name="Pricing / Card default">
-          <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan 1">Starter</p>
-          <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio 1">$19</h3>
-          <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
-            <li data-pg-edit data-pg-name="Beneficio 1.1">10 bloques reutilizables</li>
-            <li data-pg-edit data-pg-name="Beneficio 1.2">Actualizaciones básicas</li>
-            <li data-pg-edit data-pg-name="Beneficio 1.3">Soporte comunitario</li>
-          </ul>
-          <!-- Preset: button color=neutral/outline, size=md -->
-          <a href="#" class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-name="Pricing / Button default 1" data-pg-edit>Elegir</a>
-        </article>
-        <article class="bg-white dark:bg-slate-800 border-2 border-indigo-500 rounded-2xl p-6 shadow-md flex flex-col gap-4" data-pg-name="Pricing / Card featured">
-          <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan 2">Pro</p>
-          <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio 2">$39</h3>
-          <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
-            <li data-pg-edit data-pg-name="Beneficio 2.1">30 bloques listos</li>
-            <li data-pg-edit data-pg-name="Beneficio 2.2">Variantes light/dark</li>
-            <li data-pg-edit data-pg-name="Beneficio 2.3">Soporte prioritario</li>
-          </ul>
-          <!-- Preset: featured card + button color=primary, size=md -->
-          <a href="#" class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold text-base" data-pg-name="Pricing / Button featured" data-pg-edit>Elegir Pro</a>
-        </article>
-        <article class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm flex flex-col gap-4" data-pg-name="Pricing / Card default">
-          <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan 3">Agencia</p>
-          <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio 3">$79</h3>
-          <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
-            <li data-pg-edit data-pg-name="Beneficio 3.1">Todo lo Pro</li>
-            <li data-pg-edit data-pg-name="Beneficio 3.2">Licencia multi-cliente</li>
-            <li data-pg-edit data-pg-name="Beneficio 3.3">Soporte dedicado</li>
-          </ul>
-          <!-- Preset: button color=neutral/outline, size=md -->
-          <a href="#" class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-name="Pricing / Button default 3" data-pg-edit>Elegir</a>
-        </article>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Pricing 3</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tabla de precios de 3 columnas con plan destacado.</p>
+      <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-50 dark:bg-slate-900 py-16" data-pg-name="Magik / Pricing 3" data-magik-block>
+          <div class="max-w-6xl mx-auto px-6 space-y-10">
+            <div class="text-center space-y-3">
+              <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Título pricing">Planes Magik</h2>
+              <p class="text-slate-500 dark:text-slate-400" data-pg-edit data-pg-name="Texto pricing">Escala tus sitios con planes simples y claros.</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3">
+              <article class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+                <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan 1">Starter</p>
+                <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio 1">$19</h3>
+                <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
+                  <li data-pg-edit data-pg-name="Beneficio 1.1">10 bloques reutilizables</li>
+                  <li data-pg-edit data-pg-name="Beneficio 1.2">Actualizaciones básicas</li>
+                  <li data-pg-edit data-pg-name="Beneficio 1.3">Soporte comunitario</li>
+                </ul>
+                <a href="#" class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-name="Pricing / Button default 1" data-pg-edit>Elegir</a>
+              </article>
+              <article class="bg-white dark:bg-slate-800 border-2 border-indigo-500 rounded-2xl p-6 shadow-md flex flex-col gap-4">
+                <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan 2">Pro</p>
+                <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio 2">$39</h3>
+                <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
+                  <li data-pg-edit data-pg-name="Beneficio 2.1">30 bloques listos</li>
+                  <li data-pg-edit data-pg-name="Beneficio 2.2">Variantes light/dark</li>
+                  <li data-pg-edit data-pg-name="Beneficio 2.3">Soporte prioritario</li>
+                </ul>
+                <a href="#" class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold text-base" data-pg-name="Pricing / Button featured" data-pg-edit>Elegir Pro</a>
+              </article>
+              <article class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+                <p class="text-sm font-semibold text-indigo-600" data-pg-edit data-pg-name="Etiqueta plan 3">Agencia</p>
+                <h3 class="text-3xl font-bold text-slate-900 dark:text-slate-100" data-pg-edit data-pg-name="Precio 3">$79</h3>
+                <ul class="text-slate-600 dark:text-slate-400 space-y-2 text-sm">
+                  <li data-pg-edit data-pg-name="Beneficio 3.1">Todo lo Pro</li>
+                  <li data-pg-edit data-pg-name="Beneficio 3.2">Licencia multi-cliente</li>
+                  <li data-pg-edit data-pg-name="Beneficio 3.3">Soporte dedicado</li>
+                </ul>
+                <a href="#" class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-lg border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-800 dark:text-slate-100 font-semibold text-base" data-pg-name="Pricing / Button default 3" data-pg-edit>Elegir</a>
+              </article>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
+
+  </main>
 </body>
 </html>
