@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es" data-pgc-master="master.html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magik Blocks TW - UI Interactions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Tabs básico</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tabs con estado activo y contenido conmutado.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <section class="pg-lib-item bg-white rounded-xl border border-slate-200 p-4 space-y-4" data-pg-name="Magik / Tabs básico" data-magik-block data-magik-tabs>
+          <div class="flex flex-wrap gap-2" data-pg-edit data-pg-name="Tabs">
+            <button class="tab-btn px-4 py-2 rounded-lg border border-slate-200 text-sm font-semibold data-[active=true]:bg-indigo-600 data-[active=true]:text-white" data-target="tab-1" data-active="true">General</button>
+            <button class="tab-btn px-4 py-2 rounded-lg border border-slate-200 text-sm font-semibold data-[active=true]:bg-indigo-600 data-[active=true]:text-white" data-target="tab-2">Integraciones</button>
+            <button class="tab-btn px-4 py-2 rounded-lg border border-slate-200 text-sm font-semibold data-[active=true]:bg-indigo-600 data-[active=true]:text-white" data-target="tab-3">Soporte</button>
+          </div>
+          <div class="tab-panel space-y-2" id="tab-1">
+            <h3 class="text-lg font-semibold">General</h3>
+            <p class="text-sm text-slate-600">Configura opciones globales y aspecto.</p>
+          </div>
+          <div class="tab-panel hidden space-y-2" id="tab-2">
+            <h3 class="text-lg font-semibold">Integraciones</h3>
+            <p class="text-sm text-slate-600">Conecta con analytics, CRM y webhooks.</p>
+          </div>
+          <div class="tab-panel hidden space-y-2" id="tab-3">
+            <h3 class="text-lg font-semibold">Soporte</h3>
+            <p class="text-sm text-slate-600">Documentación y chat en vivo.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Slider simple</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Slider con prev/next y transiciones suaves.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <section class="pg-lib-item bg-white rounded-xl border border-slate-200 p-4 space-y-3" data-pg-name="Magik / Slider simple" data-magik-block data-magik-slider>
+          <div class="overflow-hidden rounded-lg">
+            <div class="slider-track flex transition-transform duration-300" style="width: 300%">
+              <article class="w-full flex-shrink-0 p-4 space-y-2 bg-slate-50">
+                <p class="text-sm text-indigo-600 font-semibold">Slide 1</p>
+                <h3 class="text-xl font-semibold" data-pg-edit data-pg-name="Slide 1 título">Lanza rápido</h3>
+                <p class="text-sm text-slate-600" data-pg-edit data-pg-name="Slide 1 texto">CTA y copy breve.</p>
+              </article>
+              <article class="w-full flex-shrink-0 p-4 space-y-2 bg-slate-50">
+                <p class="text-sm text-indigo-600 font-semibold">Slide 2</p>
+                <h3 class="text-xl font-semibold" data-pg-edit data-pg-name="Slide 2 título">Escala</h3>
+                <p class="text-sm text-slate-600" data-pg-edit data-pg-name="Slide 2 texto">Agrega nuevas secciones.</p>
+              </article>
+              <article class="w-full flex-shrink-0 p-4 space-y-2 bg-slate-50">
+                <p class="text-sm text-indigo-600 font-semibold">Slide 3</p>
+                <h3 class="text-xl font-semibold" data-pg-edit data-pg-name="Slide 3 título">Mide</h3>
+                <p class="text-sm text-slate-600" data-pg-edit data-pg-name="Slide 3 texto">Itera con datos.</p>
+              </article>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <button class="slider-prev inline-flex items-center px-3 py-2 rounded-lg border border-slate-200 text-sm font-semibold">Anterior</button>
+            <div class="slider-dots flex items-center gap-2 text-xs text-slate-500">
+              <span class="dot h-2 w-2 rounded-full bg-slate-300 data-[active=true]:bg-indigo-600" data-active="true"></span>
+              <span class="dot h-2 w-2 rounded-full bg-slate-300"></span>
+              <span class="dot h-2 w-2 rounded-full bg-slate-300"></span>
+            </div>
+            <button class="slider-next inline-flex items-center px-3 py-2 rounded-lg border border-slate-200 text-sm font-semibold">Siguiente</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Offcanvas menu</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Menú lateral con overlay y cierre por botón.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-900 text-white rounded-xl p-4 space-y-3 relative overflow-hidden" data-pg-name="Magik / Offcanvas menu" data-magik-block data-magik-offcanvas>
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold" data-pg-edit data-pg-name="Título offcanvas">Panel</h3>
+            <button class="offcanvas-open inline-flex items-center px-3 py-2 rounded-lg bg-white text-slate-900 text-sm font-semibold">Abrir menú</button>
+          </div>
+          <p class="text-sm text-slate-300" data-pg-edit data-pg-name="Texto offcanvas">Ideal para mobile y navegación secundaria.</p>
+          <div class="offcanvas-overlay hidden absolute inset-0 bg-black/50"></div>
+          <aside class="offcanvas-panel hidden absolute top-0 right-0 h-full w-64 bg-white text-slate-900 shadow-2xl p-4 space-y-3">
+            <div class="flex items-center justify-between">
+              <p class="text-lg font-semibold" data-pg-edit data-pg-name="Título panel">Menú</p>
+              <button class="offcanvas-close text-sm font-semibold">✕</button>
+            </div>
+            <nav class="space-y-2 text-sm">
+              <a href="#" class="block hover:text-indigo-600" data-pg-edit data-pg-name="Link a">Dashboard</a>
+              <a href="#" class="block hover:text-indigo-600" data-pg-edit data-pg-name="Link b">Proyectos</a>
+              <a href="#" class="block hover:text-indigo-600" data-pg-edit data-pg-name="Link c">Settings</a>
+            </nav>
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Popup modal</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Botón que abre modal con CTA.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <section class="pg-lib-item bg-white rounded-xl border border-slate-200 p-4 space-y-3 relative" data-pg-name="Magik / Popup modal" data-magik-block data-magik-modal>
+          <h3 class="text-lg font-semibold" data-pg-edit data-pg-name="Título modal">Lanza un popup</h3>
+          <p class="text-sm text-slate-600" data-pg-edit data-pg-name="Texto modal">Úsalo para avisos o formularios cortos.</p>
+          <button class="modal-open inline-flex items-center px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700">Mostrar modal</button>
+          <div class="modal-overlay hidden fixed inset-0 bg-black/50 z-20"></div>
+          <div class="modal-card hidden fixed inset-0 z-30 grid place-items-center p-4">
+            <div class="w-full max-w-md bg-white rounded-xl shadow-2xl p-5 space-y-3">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-sm text-indigo-600 uppercase tracking-wide" data-pg-edit data-pg-name="Etiqueta popup">Aviso</p>
+                  <h4 class="text-xl font-semibold" data-pg-edit data-pg-name="Título popup">Nuevo feature disponible</h4>
+                </div>
+                <button class="modal-close text-slate-500 hover:text-slate-900">✕</button>
+              </div>
+              <p class="text-sm text-slate-600" data-pg-edit data-pg-name="Texto popup">Actívalo desde tu panel de control.</p>
+              <div class="flex gap-2">
+                <a href="#" class="flex-1 inline-flex justify-center px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-semibold" data-pg-edit data-pg-name="Botón popup">Ir al panel</a>
+                <a href="#" class="flex-1 inline-flex justify-center px-4 py-2 rounded-lg border border-slate-200 text-sm font-semibold" data-pg-edit data-pg-name="Botón secundario popup">Luego</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // Tabs
+    document.querySelectorAll('[data-magik-tabs]').forEach((root) => {
+      const buttons = root.querySelectorAll('.tab-btn');
+      const panels = root.querySelectorAll('.tab-panel');
+      const setActive = (id) => {
+        buttons.forEach((btn) => btn.dataset.active = btn.dataset.target === id);
+        panels.forEach((panel) => panel.classList.toggle('hidden', panel.id !== id));
+      };
+      buttons.forEach((btn) => btn.addEventListener('click', () => setActive(btn.dataset.target)));
+      const first = buttons[0]?.dataset.target;
+      if (first) setActive(first);
+    });
+
+    // Slider simple
+    document.querySelectorAll('[data-magik-slider]').forEach((root) => {
+      const track = root.querySelector('.slider-track');
+      const slides = track?.children || [];
+      const dots = root.querySelectorAll('.dot');
+      const prev = root.querySelector('.slider-prev');
+      const next = root.querySelector('.slider-next');
+      let index = 0;
+      const update = () => {
+        const width = root.querySelector('.slider-track > *')?.clientWidth || 0;
+        track.style.transform = `translateX(-${index * width}px)`;
+        dots.forEach((d, i) => d.dataset.active = i === index);
+      };
+      prev?.addEventListener('click', () => {
+        index = (index - 1 + slides.length) % slides.length;
+        update();
+      });
+      next?.addEventListener('click', () => {
+        index = (index + 1) % slides.length;
+        update();
+      });
+      window.addEventListener('resize', update);
+      update();
+    });
+
+    // Offcanvas
+    document.querySelectorAll('[data-magik-offcanvas]').forEach((root) => {
+      const openBtn = root.querySelector('.offcanvas-open');
+      const closeBtn = root.querySelector('.offcanvas-close');
+      const overlay = root.querySelector('.offcanvas-overlay');
+      const panel = root.querySelector('.offcanvas-panel');
+      const close = () => {
+        overlay?.classList.add('hidden');
+        panel?.classList.add('hidden');
+      };
+      const open = () => {
+        overlay?.classList.remove('hidden');
+        panel?.classList.remove('hidden');
+      };
+      openBtn?.addEventListener('click', open);
+      closeBtn?.addEventListener('click', close);
+      overlay?.addEventListener('click', close);
+    });
+
+    // Modal
+    document.querySelectorAll('[data-magik-modal]').forEach((root) => {
+      const openBtn = root.querySelector('.modal-open');
+      const closeBtns = root.querySelectorAll('.modal-close, .modal-overlay');
+      const overlay = root.querySelector('.modal-overlay');
+      const card = root.querySelector('.modal-card');
+      const close = () => {
+        overlay?.classList.add('hidden');
+        card?.classList.add('hidden');
+      };
+      const open = () => {
+        overlay?.classList.remove('hidden');
+        card?.classList.remove('hidden');
+      };
+      openBtn?.addEventListener('click', open);
+      closeBtns.forEach((btn) => btn.addEventListener('click', close));
+    });
+  </script>
+</body>
+</html>
