@@ -41,6 +41,13 @@
       backdrop-filter: blur(10px);
       box-shadow: 0 25px 60px rgba(0, 0, 0, 0.22);
     }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
     .eyebrow {
       display: inline-flex;
       padding: 6px 12px;
@@ -126,12 +133,80 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
     }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown summary {
+      list-style: none;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .dropdown summary::-webkit-details-marker { display: none; }
+    .dropdown[open] summary { border-color: rgba(168, 85, 247, 0.6); }
+    .dropdown-menu {
+      position: absolute;
+      right: 0;
+      margin-top: 10px;
+      background: var(--panel-strong);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.3);
+      min-width: 220px;
+      padding: 8px 0;
+      z-index: 10;
+    }
+    .dropdown-menu a {
+      display: block;
+      padding: 8px 14px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .dropdown-menu a:hover { background: rgba(255, 255, 255, 0.06); }
+    .dropdown hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 6px 0;
+    }
+    @media (max-width: 640px) {
+      .dropdown-menu { left: 0; right: auto; }
+    }
   </style>
 </head>
 <body data-pgc-field="require">
   <main class="frame">
     <header class="header">
-      <div class="eyebrow">Magik Blocks TW</div>
+      <div class="header-top">
+        <div class="eyebrow">Magik Blocks TW</div>
+        <details class="dropdown">
+          <summary>Ir a categorías ▾</summary>
+          <div class="dropdown-menu">
+            <a href="index.html">Inicio</a>
+            <a href="magik-blocks-tw.html">Librería completa</a>
+            <hr>
+            <a href="blocks/heroes.html">Heroes</a>
+            <a href="blocks/features.html">Features</a>
+            <a href="blocks/pricing.html">Pricing</a>
+            <a href="blocks/cta.html">CTA</a>
+            <a href="blocks/buttons.html">Buttons</a>
+            <a href="blocks/footer.html">Footers</a>
+            <a href="blocks/dashboard.html">Dashboards</a>
+            <a href="blocks/mobile.html">Mobile UI</a>
+            <a href="blocks/webtv.html">TV Apps</a>
+            <a href="blocks/watch.html">Smartwatch</a>
+            <hr>
+            <a href="icons/lucide.html">Iconos Lucide</a>
+          </div>
+        </details>
+      </div>
       <h1>Catálogo de bloques</h1>
       <p class="lead">Accede rápido a cada categoría y arrastra los bloques desde Pinegrow.</p>
     </header>
@@ -145,10 +220,20 @@
           <h3>Heroes</h3>
           <p>Hero de dos columnas con imagen y doble CTA.</p>
         </a>
+        <a class="catalog-card" href="blocks/headers.html">
+          <span class="tag">Headers</span>
+          <h3>Headers</h3>
+          <p>Navbars y barras sticky con CTA.</p>
+        </a>
         <a class="catalog-card" href="blocks/features.html">
           <span class="tag">Features</span>
           <h3>Features</h3>
           <p>Grid de tres features con icono, título y copy.</p>
+        </a>
+        <a class="catalog-card" href="blocks/content.html">
+          <span class="tag">Content</span>
+          <h3>Content</h3>
+          <p>Secciones combinando texto, lista e imagen.</p>
         </a>
         <a class="catalog-card" href="blocks/pricing.html">
           <span class="tag">Pricing</span>
@@ -165,10 +250,35 @@
           <h3>Buttons</h3>
           <p>Presets primario, neutro, ghost y outline.</p>
         </a>
+        <a class="catalog-card" href="blocks/forms.html">
+          <span class="tag">Forms</span>
+          <h3>Forms</h3>
+          <p>Sign-in y formularios cortos con consentimiento.</p>
+        </a>
         <a class="catalog-card" href="blocks/footer.html">
           <span class="tag">Footer</span>
           <h3>Footer</h3>
           <p>Pie minimal con marca, navegación y copyright.</p>
+        </a>
+        <a class="catalog-card" href="blocks/team.html">
+          <span class="tag">Team</span>
+          <h3>Team</h3>
+          <p>Grid de miembros y ficha destacada.</p>
+        </a>
+        <a class="catalog-card" href="blocks/testimonials.html">
+          <span class="tag">Testimonials</span>
+          <h3>Testimonials</h3>
+          <p>Quotes con rating y spotlight.</p>
+        </a>
+        <a class="catalog-card" href="blocks/contact.html">
+          <span class="tag">Contact</span>
+          <h3>Contact</h3>
+          <p>Formularios y datos de contacto listos.</p>
+        </a>
+        <a class="catalog-card" href="blocks/partners.html">
+          <span class="tag">Partners</span>
+          <h3>Partners</h3>
+          <p>Tiras de logos y quote de partner.</p>
         </a>
         <a class="catalog-card" href="blocks/dashboard.html">
           <span class="tag">Dashboard</span>
@@ -180,6 +290,11 @@
           <h3>Mobile UI</h3>
           <p>Shell de app y navegación inferior.</p>
         </a>
+        <a class="catalog-card" href="blocks/posts.html">
+          <span class="tag">Blog</span>
+          <h3>Blog posts</h3>
+          <p>Tarjetas y listas de artículos.</p>
+        </a>
         <a class="catalog-card" href="blocks/webtv.html">
           <span class="tag">WebTV</span>
           <h3>TV Apps</h3>
@@ -189,6 +304,31 @@
           <span class="tag">Watch</span>
           <h3>Smartwatch UI</h3>
           <p>Tarjetas compactas de actividad, música y notificaciones.</p>
+        </a>
+        <a class="catalog-card" href="blocks/social.html">
+          <span class="tag">Social</span>
+          <h3>Social</h3>
+          <p>Links y pruebas sociales.</p>
+        </a>
+        <a class="catalog-card" href="blocks/counters.html">
+          <span class="tag">Counters</span>
+          <h3>Counters</h3>
+          <p>Métricas en grid y filas con tendencia.</p>
+        </a>
+        <a class="catalog-card" href="blocks/columns.html">
+          <span class="tag">Columns</span>
+          <h3>Column layouts</h3>
+          <p>Distribuciones 2/1 y 3 columnas.</p>
+        </a>
+        <a class="catalog-card" href="blocks/dividers.html">
+          <span class="tag">Dividers</span>
+          <h3>Dividers</h3>
+          <p>Separadores con label y badge.</p>
+        </a>
+        <a class="catalog-card" href="blocks/shop.html">
+          <span class="tag">Shop</span>
+          <h3>Shop</h3>
+          <p>Tarjeta de producto y plan mini.</p>
         </a>
         <a class="catalog-card" href="icons/lucide.html">
           <span class="tag">Iconos</span>

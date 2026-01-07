@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" data-pgc-master="master.html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magik Blocks TW - Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Contact split</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Formulario simple junto a datos de contacto.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <section class="pg-lib-item grid gap-6 md:grid-cols-2 bg-white rounded-xl border border-slate-200 p-6" data-pg-name="Magik / Contact split" data-magik-block>
+          <div class="space-y-3">
+            <h3 class="text-2xl font-semibold" data-pg-edit data-pg-name="Título">Hablemos de tu proyecto</h3>
+            <p class="text-slate-600" data-pg-edit data-pg-name="Texto">Responde en menos de 24h. También puedes agendar una demo.</p>
+            <div class="space-y-2 text-sm text-slate-700">
+              <p data-pg-edit data-pg-name="Email">📧 hola@magik.com</p>
+              <p data-pg-edit data-pg-name="Tel">📞 +54 11 5555-1234</p>
+              <p data-pg-edit data-pg-name="Horario">⏰ Lun-Vie 9 a 18h</p>
+            </div>
+          </div>
+          <form class="space-y-3">
+            <input type="text" class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Nombre" data-pg-edit data-pg-name="Input nombre">
+            <input type="email" class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Email" data-pg-edit data-pg-name="Input email">
+            <textarea rows="3" class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Cuéntanos brevemente" data-pg-edit data-pg-name="Input mensaje"></textarea>
+            <button type="button" class="w-full inline-flex justify-center px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-700" data-pg-edit data-pg-name="Botón enviar">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Contact card</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tarjeta de contacto con mapa embebible.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-900 text-white rounded-xl p-6 space-y-4" data-pg-name="Magik / Contact card" data-magik-block>
+          <div class="flex items-center gap-3">
+            <span class="h-12 w-12 grid place-items-center rounded-xl bg-indigo-500 text-xl font-bold" data-pg-edit data-pg-name="Logo card">M</span>
+            <div>
+              <p class="text-sm text-indigo-200 uppercase tracking-wide" data-pg-edit data-pg-name="Etiqueta card">Oficina</p>
+              <h3 class="text-xl font-semibold" data-pg-edit data-pg-name="Título card">Buenos Aires</h3>
+            </div>
+          </div>
+          <p class="text-slate-200 text-sm" data-pg-edit data-pg-name="Dirección">Av. Siempreviva 1234, CABA</p>
+          <div class="grid gap-2 text-sm text-slate-200">
+            <span data-pg-edit data-pg-name="Tel card">+54 11 5555-1234</span>
+            <span data-pg-edit data-pg-name="Email card">soporte@magik.com</span>
+          </div>
+          <div class="rounded-lg overflow-hidden ring-1 ring-white/10 bg-white/5 h-40 grid place-items-center text-slate-300" data-pg-edit data-pg-name="Mapa">Mapa embebido</div>
+        </section>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

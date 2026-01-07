@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es" data-pgc-master="master.html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magik Blocks TW - Headers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Header minimal</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Navbar clara con logo, links y botón de acción.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <header class="pg-lib-item flex items-center justify-between gap-4 bg-white rounded-xl border border-slate-200 px-4 py-3 shadow-sm" data-pg-name="Magik / Header minimal" data-magik-block>
+          <div class="flex items-center gap-2">
+            <span class="h-10 w-10 rounded-xl bg-indigo-100 text-indigo-700 font-bold grid place-items-center" data-pg-edit data-pg-name="Logo">M</span>
+            <span class="text-lg font-semibold" data-pg-edit data-pg-name="Marca">Magik</span>
+          </div>
+          <nav class="hidden md:flex items-center gap-4 text-sm text-slate-600">
+            <a href="#" class="hover:text-slate-900" data-pg-edit data-pg-name="Link 1">Producto</a>
+            <a href="#" class="hover:text-slate-900" data-pg-edit data-pg-name="Link 2">Recursos</a>
+            <a href="#" class="hover:text-slate-900" data-pg-edit data-pg-name="Link 3">Precios</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <a href="#" class="text-sm text-slate-600 hover:text-slate-900" data-pg-edit data-pg-name="Link ghost">Ingresar</a>
+            <a href="#" class="inline-flex items-center px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700" data-pg-edit data-pg-name="Botón">Comenzar</a>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Header sticky</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Barra fija con input de búsqueda y CTA secundaria.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <header class="pg-lib-item sticky top-0 bg-slate-900 text-white rounded-xl border border-slate-800 px-4 py-3 shadow-lg shadow-slate-900/30 flex items-center gap-4" data-pg-name="Magik / Header sticky" data-magik-block>
+          <div class="flex items-center gap-2">
+            <span class="h-10 w-10 rounded-xl bg-indigo-500 font-bold grid place-items-center" data-pg-edit data-pg-name="Logo dark">M</span>
+            <span class="text-lg font-semibold" data-pg-edit data-pg-name="Marca dark">Magik</span>
+          </div>
+          <input type="search" class="flex-1 bg-white/10 border border-white/10 rounded-lg px-3 py-2 text-sm placeholder:text-slate-400" placeholder="Buscar" data-pg-edit data-pg-name="Busqueda">
+          <div class="hidden sm:flex items-center gap-3">
+            <a href="#" class="text-sm text-slate-300 hover:text-white" data-pg-edit data-pg-name="Link soporte">Soporte</a>
+            <a href="#" class="inline-flex items-center px-4 py-2 rounded-lg bg-white text-slate-900 text-sm font-semibold hover:bg-slate-100" data-pg-edit data-pg-name="Botón dark">Abrir app</a>
+          </div>
+        </header>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

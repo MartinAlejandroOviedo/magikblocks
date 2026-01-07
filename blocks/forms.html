@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" data-pgc-master="master.html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magik Blocks TW - Forms</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Form sign-in</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Formulario de login con social y remember.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
+        <section class="pg-lib-item w-full max-w-md bg-white rounded-xl border border-slate-200 p-6 space-y-4" data-pg-name="Magik / Form sign-in" data-magik-block>
+          <div class="space-y-1 text-center">
+            <h2 class="text-2xl font-semibold" data-pg-edit data-pg-name="Título">Ingresa a tu cuenta</h2>
+            <p class="text-sm text-slate-600" data-pg-edit data-pg-name="Texto">Usa tu email o redes</p>
+          </div>
+          <form class="space-y-3">
+            <input type="email" class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Email" data-pg-edit data-pg-name="Input email">
+            <input type="password" class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Contraseña" data-pg-edit data-pg-name="Input password">
+            <div class="flex items-center justify-between text-sm">
+              <label class="inline-flex items-center gap-2 text-slate-600">
+                <input type="checkbox" class="rounded border-slate-300" data-pg-edit data-pg-name="Remember">
+                <span>Recordarme</span>
+              </label>
+              <a href="#" class="text-indigo-600 font-semibold" data-pg-edit data-pg-name="Forgot">¿Olvidaste tu clave?</a>
+            </div>
+            <button type="button" class="w-full inline-flex justify-center px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-700" data-pg-edit data-pg-name="Botón login">Ingresar</button>
+            <div class="grid grid-cols-2 gap-2">
+              <button type="button" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm font-semibold bg-white" data-pg-edit data-pg-name="Social 1">Google</button>
+              <button type="button" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm font-semibold bg-white" data-pg-edit data-pg-name="Social 2">GitHub</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Form CTA</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Formulario corto con consentimiento.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4 flex justify-center" data-pgc-field="Component">
+        <section class="pg-lib-item w-full max-w-lg bg-slate-900 text-white rounded-xl p-6 space-y-4" data-pg-name="Magik / Form CTA" data-magik-block>
+          <div class="space-y-2">
+            <p class="text-sm text-indigo-200 uppercase tracking-wide" data-pg-edit data-pg-name="Etiqueta">Demo</p>
+            <h3 class="text-2xl font-semibold" data-pg-edit data-pg-name="Título oscuro">Solicita una demo guiada</h3>
+            <p class="text-sm text-slate-200" data-pg-edit data-pg-name="Texto oscuro">Coordinamos en menos de 24h.</p>
+          </div>
+          <form class="space-y-3">
+            <div class="grid sm:grid-cols-2 gap-3">
+              <input type="text" class="w-full rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm placeholder:text-slate-400" placeholder="Nombre" data-pg-edit data-pg-name="Input nombre oscuro">
+              <input type="email" class="w-full rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm placeholder:text-slate-400" placeholder="Email" data-pg-edit data-pg-name="Input email oscuro">
+            </div>
+            <textarea rows="3" class="w-full rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-sm placeholder:text-slate-400" placeholder="¿Qué quieres lograr?" data-pg-edit data-pg-name="Textarea oscuro"></textarea>
+            <label class="inline-flex items-start gap-2 text-sm text-slate-200">
+              <input type="checkbox" class="mt-1 rounded border-white/20 bg-white/10" data-pg-edit data-pg-name="Consent">
+              <span data-pg-edit data-pg-name="Texto consentimiento">Acepto recibir comunicaciones.</span>
+            </label>
+            <button type="button" class="w-full inline-flex justify-center px-4 py-2 rounded-lg bg-white text-slate-900 font-semibold text-sm hover:bg-slate-100" data-pg-edit data-pg-name="Botón demo">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

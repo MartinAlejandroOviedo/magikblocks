@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" data-pgc-master="master.html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magik Blocks TW - Column layouts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900" data-pg-library="Magik Blocks TW" data-pg-description="Bloques Tailwind listos para arrastrar y soltar en Pinegrow" data-pgc-field="require">
+  <main class="max-w-5xl mx-auto px-6 py-8 space-y-6" data-pgc-field="page.components">
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Columns 2-1</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Layout 2/3 + 1/3 para contenido y sidebar.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <section class="pg-lib-item grid gap-4 md:grid-cols-[2fr,1fr] bg-white rounded-xl border border-slate-200 p-6" data-pg-name="Magik / Columns 2-1" data-magik-block>
+          <div class="space-y-2">
+            <h3 class="text-2xl font-semibold" data-pg-edit data-pg-name="Título col">Columna principal</h3>
+            <p class="text-slate-600" data-pg-edit data-pg-name="Texto col">Usa este espacio para artículos o contenido largo.</p>
+            <div class="h-32 rounded-lg bg-slate-100" data-pg-edit data-pg-name="Placeholder col">Contenido</div>
+          </div>
+          <div class="space-y-3 rounded-lg bg-slate-100 p-4">
+            <p class="text-sm font-semibold" data-pg-edit data-pg-name="Sidebar título">Sidebar</p>
+            <p class="text-sm text-slate-600" data-pg-edit data-pg-name="Sidebar texto">Links, CTA o anuncios.</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 rounded-lg bg-indigo-600 text-white text-sm font-semibold" data-pg-edit data-pg-name="Sidebar botón">Acción</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Columns 3</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tres columnas equilibradas para features o pasos.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <section class="pg-lib-item grid gap-4 md:grid-cols-3 bg-slate-900 text-white rounded-xl p-6" data-pg-name="Magik / Columns 3" data-magik-block>
+          <article class="space-y-2">
+            <p class="text-sm text-indigo-200" data-pg-edit data-pg-name="Meta 1">Paso 1</p>
+            <h4 class="text-lg font-semibold" data-pg-edit data-pg-name="Título 1">Configura</h4>
+            <p class="text-sm text-slate-200" data-pg-edit data-pg-name="Texto 1">Añade la librería remota en Pinegrow.</p>
+          </article>
+          <article class="space-y-2">
+            <p class="text-sm text-indigo-200" data-pg-edit data-pg-name="Meta 2">Paso 2</p>
+            <h4 class="text-lg font-semibold" data-pg-edit data-pg-name="Título 2">Arrastra</h4>
+            <p class="text-sm text-slate-200" data-pg-edit data-pg-name="Texto 2">Arrastra bloques y edita textos.</p>
+          </article>
+          <article class="space-y-2">
+            <p class="text-sm text-indigo-200" data-pg-edit data-pg-name="Meta 3">Paso 3</p>
+            <h4 class="text-lg font-semibold" data-pg-edit data-pg-name="Título 3">Publica</h4>
+            <p class="text-sm text-slate-200" data-pg-edit data-pg-name="Texto 3">Lanza en minutos con estilos consistentes.</p>
+          </article>
+        </section>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
