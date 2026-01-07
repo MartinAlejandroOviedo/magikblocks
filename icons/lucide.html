@@ -226,7 +226,7 @@
     </section>
   </main>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script>
     const listEl = document.getElementById('icon-list');
     const searchEl = document.getElementById('search');
@@ -238,7 +238,14 @@
     const sizeValue = document.getElementById('size-value');
     const strokeValue = document.getElementById('stroke-value');
 
-    const iconNames = Object.keys(lucide.icons || {}).sort();
+    const toKebab = (str) => str
+      .replace(/([a-z0-9])([A-Z])/g, '$1-$2')
+      .replace(/([A-Z])([A-Z][a-z])/g, '$1-$2')
+      .toLowerCase();
+
+    const iconNames = Object.keys(lucide.icons || {})
+      .map(toKebab)
+      .sort();
 
     const buildIconItem = (name) => {
       const li = document.createElement('li');
