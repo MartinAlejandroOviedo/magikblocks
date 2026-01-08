@@ -97,6 +97,98 @@
       </div>
     </div>
 
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Game hub menu</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Menú de juegos con portada y CTA para ingresar a jugar.</p>
+      <div class="border border-dashed border-slate-200 rounded-md p-4" data-pgc-field="Component">
+        <section class="pg-lib-item bg-slate-900 text-white rounded-xl p-5 space-y-4" data-pg-name="Magik / Game hub menu" data-magik-block>
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-xs text-indigo-200 uppercase tracking-wide" data-pg-edit data-pg-name="Game meta">Juegos</p>
+              <h3 class="text-2xl font-semibold" data-pg-edit data-pg-name="Game title">Elige tu aventura</h3>
+            </div>
+            <button class="px-4 py-2 rounded-lg bg-white text-slate-900 text-sm font-semibold" data-pg-edit data-pg-name="Game CTA">Continuar partida</button>
+          </div>
+          <div class="grid gap-3 md:grid-cols-3">
+            <article class="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+              <img src="../assets/photo1.jpg" alt="Juego 1" class="w-full h-28 object-cover" data-pg-image data-pg-name="Game cover 1">
+              <div class="p-3 space-y-1">
+                <p class="font-semibold" data-pg-edit data-pg-name="Game name 1">Nebula Quest</p>
+                <p class="text-xs text-slate-300" data-pg-edit data-pg-name="Game desc 1">Sci-Fi · 2 jugadores</p>
+                <button class="mt-2 w-full px-3 py-2 rounded-lg bg-indigo-500 text-white text-sm font-semibold" data-pg-edit data-pg-name="Game btn 1">Jugar</button>
+              </div>
+            </article>
+            <article class="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+              <img src="../assets/photo2.jpg" alt="Juego 2" class="w-full h-28 object-cover" data-pg-image data-pg-name="Game cover 2">
+              <div class="p-3 space-y-1">
+                <p class="font-semibold" data-pg-edit data-pg-name="Game name 2">Rally Drift</p>
+                <p class="text-xs text-slate-300" data-pg-edit data-pg-name="Game desc 2">Carreras · Online</p>
+                <button class="mt-2 w-full px-3 py-2 rounded-lg bg-indigo-500 text-white text-sm font-semibold" data-pg-edit data-pg-name="Game btn 2">Jugar</button>
+              </div>
+            </article>
+            <article class="rounded-xl overflow-hidden border border-white/10 bg-white/5">
+              <img src="../assets/photo3.jpg" alt="Juego 3" class="w-full h-28 object-cover" data-pg-image data-pg-name="Game cover 3">
+              <div class="p-3 space-y-1">
+                <p class="font-semibold" data-pg-edit data-pg-name="Game name 3">Kingdom Forge</p>
+                <p class="text-xs text-slate-300" data-pg-edit data-pg-name="Game desc 3">Estrategia · Coop</p>
+                <button class="mt-2 w-full px-3 py-2 rounded-lg bg-indigo-500 text-white text-sm font-semibold" data-pg-edit data-pg-name="Game btn 3">Jugar</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-5 space-y-2" data-pgc="lib.blocks">
+      <h2 class="text-lg font-semibold" data-pgc-field="Block Title">Magik / Electro shop listing</h2>
+      <p class="text-slate-600 text-sm" data-pgc-field="Block Description">Tabla/listado para tienda de electrodomésticos con precios y stock.</p>
+      <div class="border border-dashed border-slate-200 rounded-md overflow-hidden" data-pgc-field="Component">
+        <section class="pg-lib-item bg-white rounded-xl border border-slate-200 p-4 space-y-3" data-pg-name="Magik / Electro shop listing" data-magik-block>
+          <div class="flex flex-wrap gap-3 items-center">
+            <input type="search" class="w-full sm:w-64 rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Buscar producto" data-pg-edit data-pg-name="Electro search">
+            <select class="w-full sm:w-40 rounded-lg border border-slate-200 px-3 py-2 text-sm">
+              <option>Todos</option>
+              <option>TV</option>
+              <option>Audio</option>
+              <option>Cocina</option>
+            </select>
+          </div>
+          <div class="overflow-hidden rounded-lg border border-slate-200">
+            <table class="min-w-full text-sm">
+              <thead class="bg-slate-100 text-slate-700">
+                <tr>
+                  <th class="text-left px-4 py-2">Producto</th>
+                  <th class="text-left px-4 py-2">Categoría</th>
+                  <th class="text-left px-4 py-2">Precio</th>
+                  <th class="text-left px-4 py-2">Stock</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                <tr>
+                  <td class="px-4 py-2 font-semibold text-slate-900" data-pg-edit data-pg-name="Electro item 1">Smart TV 55\"</td>
+                  <td class="px-4 py-2 text-slate-600">TV</td>
+                  <td class="px-4 py-2 text-slate-900" data-pg-edit data-pg-name="Electro price 1">$799</td>
+                  <td class="px-4 py-2"><span class="inline-flex px-2 py-1 rounded-full text-xs bg-emerald-100 text-emerald-700">En stock</span></td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 font-semibold text-slate-900" data-pg-edit data-pg-name="Electro item 2">Parlante WiFi</td>
+                  <td class="px-4 py-2 text-slate-600">Audio</td>
+                  <td class="px-4 py-2 text-slate-900" data-pg-edit data-pg-name="Electro price 2">$189</td>
+                  <td class="px-4 py-2"><span class="inline-flex px-2 py-1 rounded-full text-xs bg-amber-100 text-amber-700">Pocas uds.</span></td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 font-semibold text-slate-900" data-pg-edit data-pg-name="Electro item 3">Heladera Inox</td>
+                  <td class="px-4 py-2 text-slate-600">Cocina</td>
+                  <td class="px-4 py-2 text-slate-900" data-pg-edit data-pg-name="Electro price 3">$1,120</td>
+                  <td class="px-4 py-2"><span class="inline-flex px-2 py-1 rounded-full text-xs bg-red-100 text-red-700">Sin stock</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+
   </main>
 
   <script>
